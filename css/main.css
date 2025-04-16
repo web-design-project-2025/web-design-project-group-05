@@ -1,0 +1,137 @@
+:root {
+  --primary-font: "Josefin Sans", sans-serif;
+  --text-font: "Jost", sans-serif;
+  --logo-font: "Gluten", serif;
+  --primary-color: #f4912e;
+  --secondary-color: #0d9277;
+  --hovering-color: #0b5e4f;
+  --beige: #f2f1df;
+  --text-black: #101010;
+  --text-white: #ffffff;
+}
+
+/*HEADER*/
+/*Asked Chatgpt for help because it only aligned vertically: https://chatgpt.com/share/67b3679a-3520-8010-a57c-a9f3904acf6a, accessed: 17.02.25 */
+
+#logo {
+  font-family: var(--logo-font);
+  font-size: 4rem;
+  font-weight: 600;
+  list-style: none;
+  color: var(--text-white);
+}
+
+.navigation-menu {
+    width: 40%;
+    margin-right: 20%;  
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+header {
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+
+header nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+header nav ul a {
+  margin-right: 20px; /* Add some space between the icons */
+}
+
+/*icons get smaller when screen gets smaler*/
+@media (max-width: 600px) {
+  .icon {
+    min-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .link-icon {
+    margin-right: 0;
+  }
+}
+
+/* Adjust font size on smaller screens */
+@media (max-width: 1000px) {
+  #logo {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo {
+    font-size: 1.6rem;
+  }
+}
+
+/*The logo has no underline for the link*/
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Archivo Black", sans-serif;
+  color: var(--brown);
+}
+
+h3,
+li,
+p {
+  font-family: "Afacad", sans-serif;
+  list-style: none;
+  color: var(--brown);
+}
+
+ul {
+  padding-left: 0;
+  color: var(--brown);
+  margin-top: 0%;
+}
+
+/*Input box for the Newsletter*/
+#input-box-footer {
+  margin-left: 2rem;
+  background-color: white;
+  width: 19rem;
+  height: 2rem;
+  border-radius: 6px;
+  border-color: var(--beige);
+}
+
+/*Background-color for the footer*/
+footer {
+  position: relative;
+  background-color: burlywood;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  height: 25rem;
+}
+
+/*Grid for the footer*/
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: left;
+  margin-left: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 820px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.footer-header {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+}
