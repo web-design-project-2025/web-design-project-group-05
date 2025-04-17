@@ -1,0 +1,15 @@
+.steps {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.stop {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+}
+
+.selected {
+  background-color: beige;
+}
