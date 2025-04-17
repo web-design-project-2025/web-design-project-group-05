@@ -1,0 +1,80 @@
+:root {
+  --primary-font: "Josefin Sans", sans-serif;
+  --text-font: "Jost", sans-serif;
+  --logo-font: "Gluten", serif;
+  --primary-color: #f4912e;
+  --secondary-color: #0d9277;
+  --hovering-color: #0b5e4f;
+  --beige: #f2f1df;
+  --text-black: #101010;
+  --text-white: #ffffff;
+}
+
+/*Body text*/
+.body-text {
+  font-family: var(--text-font);
+}
+
+/*Top background image*/
+#background-image {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-image-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#headline-long-image {
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #0d9277;
+  text-align: center;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--primary-font);
+}
+
+/*Introduction of us*/
+.introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Favorite Recipes*/
+.favorite-recipes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--beige);
+}
+
+/*Our secret*/
+.our-secret {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*Quote*/
+.quote {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#quote-text {
+  font-family: var(--primary-font);
+}
+
+/*Why choose us?*/
+.why-choose-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
