@@ -1,0 +1,255 @@
+{
+  "recipes": [
+    {
+      "name": "Indian Curry",
+      "image": "img/indian-curry.jpg",
+      "id": 10,
+      "time": "60 mins",
+      "nutrition_facts": {
+        "calories": 250,
+        "fat": 10,
+        "carbs": 35,
+        "protein": 8
+      },
+      "ingredients": [
+        "1 tbsp olive oil",
+        "1 onion, chopped",
+        "2 garlic cloves, minced",
+        "1 tbsp ginger, grated",
+        "2 tomatoes, chopped",
+        "1 cup chopped veggies (potato, carrots, peas, cauliflower)",
+        "1 tsp curry powder",
+        "½ tsp turmeric",
+        "1 tsp cumin",
+        "Salt to taste",
+        "1 cup water or light coconut milk",
+        "Fresh coriander (optional)"
+      ],
+      "instructions": [
+        "Heat oil in a pan. Sauté onions until golden.",
+        "Add garlic and ginger; cook for 1 minute.",
+        "Add tomatoes and cook until soft.",
+        "Stir in spices and cook for 2 minutes.",
+        "Add veggies and water or coconut milk. Cover and simmer until veggies are tender (15–20 minutes).",
+        "Garnish with coriander and serve."
+      ]
+    },
+    {
+      "name": "Veg Wrap",
+      "image": "img/veg-wrap.jpg",
+      "id": 11,
+      "time": "15–20 mins",
+      "nutrition_facts": {
+        "calories": 300,
+        "fat": 12,
+        "carbs": 35,
+        "protein": 10
+      },
+      "ingredients": [
+        "1 whole grain wrap",
+        "½ avocado, mashed",
+        "½ cup shredded carrots",
+        "¼ cup chopped cucumber",
+        "¼ cup hummus",
+        "Spinach or lettuce leaves",
+        "Salt, pepper, lemon juice"
+      ],
+      "instructions": [
+        "Spread hummus and mashed avocado on the wrap.",
+        "Layer with veggies and greens.",
+        "Season with salt, pepper, and a squeeze of lemon.",
+        "Roll tightly and slice in half."
+      ]
+    },
+    {
+      "name": "Tuna Salad",
+      "image": "img/tuna-salad.jpg",
+      "id": 12,
+      "time": "10 mins",
+      "nutrition_facts": {
+        "calories": 250,
+        "fat": 15,
+        "carbs": 10,
+        "protein": 22
+      },
+      "ingredients": [
+        "1 can tuna in water, drained",
+        "2 tbsp Greek yogurt or light mayo",
+        "1 celery stalk, diced",
+        "¼ red onion, chopped",
+        "½ apple, chopped (optional)",
+        "Salt, pepper, lemon juice"
+      ],
+      "instructions": [
+        "Mix all ingredients in a bowl.",
+        "Adjust seasoning to taste.",
+        "Serve on lettuce leaves, whole grain toast, or as is."
+      ]
+    },
+    {
+      "name": "Chickpea Bowl",
+      "image": "img/chickpea-bowl.jpg",
+      "id": 13,
+      "time": "20 mins",
+      "nutrition_facts": {
+        "calories": 400,
+        "fat": 14,
+        "carbs": 45,
+        "protein": 15
+      },
+      "ingredients": [
+        "1 cup cooked chickpeas",
+        "½ avocado, sliced",
+        "½ cup quinoa or brown rice",
+        "½ cup chopped cucumber and tomato",
+        "1 tbsp olive oil",
+        "Lemon juice, salt, pepper",
+        "Fresh parsley or cilantro"
+      ],
+      "instructions": [
+        "Arrange cooked ingredients in a bowl.",
+        "Drizzle with olive oil, lemon juice, and seasoning.",
+        "Toss gently and top with herbs."
+      ]
+    },
+    {
+      "name": "Rice Veg",
+      "image": "img/rice-veg.jpg",
+      "id": 14,
+      "time": "15-30 mins",
+      "nutrition_facts": {
+        "calories": 300,
+        "fat": 8,
+        "carbs": 45,
+        "protein": 8
+      },
+      "ingredients": [
+        "1 cup cooked brown or white rice",
+        "½ cup chopped bell pepper",
+        "½ cup peas and carrots",
+        "1 tbsp soy sauce or tamari",
+        "1 tsp sesame oil or olive oil",
+        "1 clove garlic, minced"
+      ],
+      "instructions": [
+        "Heat oil in a pan, sauté garlic.",
+        "Add vegetables, cook until tender.",
+        "Add cooked rice, soy sauce, and stir well.",
+        "Serve hot, optionally with green onions on top."
+      ]
+    },
+    {
+      "name": "Egg Muffin",
+      "image": "img/egg-muffin.jpg",
+      "id": 15,
+      "time": "25 mins",
+      "nutrition_facts": {
+        "calories": 120,
+        "fat": 8,
+        "carbs": 2,
+        "protein": 10
+      },
+      "ingredients": [
+        "4 eggs",
+        "¼ cup chopped bell pepper",
+        "¼ cup spinach or kale",
+        "2 tbsp milk (optional)",
+        "Salt, pepper, herbs",
+        "Cheese (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 180°C (350°F).",
+        "In a bowl, whisk eggs, milk, salt, pepper.",
+        "Stir in chopped veggies and cheese (if using).",
+        "Pour into muffin tin (lightly greased).",
+        "Bake for 18–20 mins until set.",
+        "Cool slightly before serving or refrigerate for grab-and-go."
+      ]
+    },
+    {
+      "name": "Zucchini Noodles with Pesto",
+      "image": "img/zucchini-noodles.jpg",
+      "id": 16,
+      "time": "15 mins",
+      "nutrition": {
+        "calories": 300,
+        "protein": 10,
+        "carbs": 18,
+        "fat": 22,
+        "fiber": 4
+      },
+      "ingredients": [
+        "2 medium zucchinis, spiralized",
+        "1/2 cup cherry tomatoes, halved",
+        "1/4 cup pesto (store-bought or homemade)",
+        "1 tbsp olive oil",
+        "2 tbsp grated Parmesan (optional)",
+        "Salt, pepper, lemon juice"
+      ],
+      "instructions": [
+        "Spiralize the zucchinis or use pre-spiralized ones.",
+        "Heat olive oil in a pan, lightly sauté zucchini noodles for 2–3 mins.",
+        "Remove from heat and toss with pesto, cherry tomatoes, salt, pepper, and lemon juice.",
+        "Top with Parmesan and serve immediately."
+      ]
+    },
+    {
+      "name": "Baked Salmon with Veggies",
+      "image": "img/baked-salmon.jpg",
+      "id": 17,
+      "time": "30 mins",
+      "nutrition": {
+        "calories": 450,
+        "protein": 35,
+        "carbs": 20,
+        "fat": 28,
+        "fiber": 5
+      },
+      "ingredients": [
+        "2 salmon fillets",
+        "1 cup broccoli florets",
+        "1 cup carrots, sliced",
+        "1 tbsp olive oil",
+        "1/2 lemon, sliced",
+        "Salt, pepper, garlic powder, herbs (like dill or thyme)"
+      ],
+      "instructions": [
+        "Preheat oven to 200°C (400°F).",
+        "Line a baking sheet with parchment paper.",
+        "Place salmon and veggies on the tray, drizzle with olive oil, and season.",
+        "Add lemon slices on top of salmon.",
+        "Bake for 20 mins or until salmon is flaky and veggies are tender."
+      ]
+    },
+    {
+      "name": "Stuffed Sweet Potato",
+      "image": "img/stuffed-potato.jpg",
+      "id": 18,
+      "time": "40 mins",
+      "nutrition": {
+        "calories": 400,
+        "protein": 15,
+        "carbs": 45,
+        "fat": 18,
+        "fiber": 9
+      },
+      "ingredients": [
+        "2 medium sweet potatoes",
+        "1/2 cup canned black beans",
+        "1/2 avocado, sliced",
+        "1/4 cup Greek yogurt or sour cream",
+        "1/2 lime, juiced",
+        "1/4 tsp cumin",
+        "Salt, pepper, chili flakes",
+        "Fresh parsley or cilantro (optional)"
+      ],
+      "instructions": [
+        "Preheat oven to 200°C (400°F). Wash and poke holes in sweet potatoes.",
+        "Bake for 30–35 mins until soft.",
+        "Mix black beans with cumin, salt, and lime juice.",
+        "Slice sweet potatoes open and mash slightly.",
+        "Fill with beans, avocado, yogurt, and herbs. Sprinkle chili flakes and serve hot."
+      ]
+    }
+  ]
+}
