@@ -11,7 +11,6 @@
 }
 
 /*HEADER*/
-/*Asked Chatgpt for help because it only aligned vertically: https://chatgpt.com/share/67b3679a-3520-8010-a57c-a9f3904acf6a, accessed: 17.02.25 */
 
 #logo {
   font-family: var(--logo-font);
@@ -22,42 +21,38 @@
 }
 
 .navigation-menu {
-    width: 40%;
-    margin-right: 20%;  
-    margin-left: 0%;
-    margin-right: 0%;
-}
-
-header {
-  background-color: burlywood;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 2%;
+  padding: 3rem;
+  color: var(--text-white);
 }
 
-header nav ul {
+.navigation-menu a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header {
+  background-color: var(--primary-color);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
-header nav ul a {
-  margin-right: 20px; /* Add some space between the icons */
-}
-
-/*icons get smaller when screen gets smaler*/
-@media (max-width: 600px) {
-  .icon {
-    min-width: 30%;
-  }
-}
-
-@media (max-width: 600px) {
-  .link-icon {
-    margin-right: 0;
-  }
+nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Adjust font size on smaller screens */
@@ -97,20 +92,10 @@ ul {
   margin-top: 0%;
 }
 
-/*Input box for the Newsletter*/
-#input-box-footer {
-  margin-left: 2rem;
-  background-color: white;
-  width: 19rem;
-  height: 2rem;
-  border-radius: 6px;
-  border-color: var(--beige);
-}
-
 /*Background-color for the footer*/
 footer {
   position: relative;
-  background-color: burlywood;
+  background-color: var(--primary-color);
   padding-top: 1.7rem;
   padding-bottom: 1.7rem;
   height: 25rem;
