@@ -92,7 +92,6 @@ ul {
   margin-top: 0%;
 }
 
-
 /* FOOTER */
 /*Background-color for the footer*/
 footer {
@@ -121,4 +120,9 @@ footer {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.8rem;
   font-weight: bold;
+}
+
+li {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
 }
