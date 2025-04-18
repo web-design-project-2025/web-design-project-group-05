@@ -1,0 +1,64 @@
+/*Top background image*/
+#background-image {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-image-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#headline-long-image {
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--primary-font);
+}
+
+/* Recipe grid container */
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 20px;
+}
+
+/* Style for each recipe info section */
+.recipe-card {
+  padding: 15px;
+  text-align: start;
+}
+
+/* Image styling */
+.recipe-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for recipe name and time */
+h2 {
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: var(--primary-font);
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
