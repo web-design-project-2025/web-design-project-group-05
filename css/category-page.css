@@ -1,0 +1,118 @@
+/* BANNER IMAGE AND TEXT */
+#background-image {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #background-image-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-on-banner {
+    font-family: var(--primary-font);
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-5%, -50%); 
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: black;
+    padding: 1rem;
+    border-radius: 2.5px;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .munchly-banner {
+    font-weight: bold;
+  }
+
+  .categories-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem; 
+    font-family: var(--primary-font);
+    color: var(--secondary-color); 
+  }
+
+  /* BUTTON */
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem 0 2rem; /* top, right, bottom, left padding */
+  }
+
+.button {
+    background-color: var(--secondary-color); 
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem; /* top and bottom padding and left and right padding */
+    border-radius: 2.5px;
+    font-family: var(--primary-font);
+    transition: background-color 0.2s ease;
+  }
+
+  .button:hover {
+    background-color: var(--hovering-color); 
+  }
+
+/* GRID FOR CATEGORIES */
+  .grid-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-items: center; 
+  }
+  
+  .grid-item {
+    width: 60%;
+  }
+
+  .grid-item img {
+    width: 100%;
+    border-radius: 2.5px;
+  }
+  
+  .grid-item figcaption {
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+  }
+
+  /* FOOD ORAKEL */
+  .food-orakel-heading {
+    margin-left: 7%;
+    font-size: 2rem;
+    margin-top: 10rem; /* spacing from image */
+    font-family: var(--primary-font);
+    color: var(--secondary-color); /* dark grey for nice contrast */
+  }
+
+  .food-orakel-grid figcaption {
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+  }
+
+  .grid-orakel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-items: center;  
+  }
+
+  .food-orakel-grid {
+    width: 60%;
+  }
+
+  .food-orakel-grid img {
+    width: 100%;
+    border-radius: 2.5px;
+  }
+  
