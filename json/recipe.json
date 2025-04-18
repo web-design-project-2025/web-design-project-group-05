@@ -5,11 +5,12 @@
       "image": "img/indian-curry.jpg",
       "id": 10,
       "time": "60 mins",
+      "servings": "6 Servings",
       "nutrition_facts": {
-        "calories": 250,
-        "fat": 10,
-        "carbs": 35,
-        "protein": 8
+        "Calories": 250,
+        "Fat": 10,
+        "Carbs": 35,
+        "Protein": 8
       },
       "ingredients": [
         "1 tbsp olive oil",

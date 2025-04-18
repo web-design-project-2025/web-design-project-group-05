@@ -6,7 +6,12 @@
     <title>Main Dishes</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/recipe-page.css" />
-    <script src="java-script/main-dishes.js" defer></script>
+    <script src="java-script/recipes.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
   </head>
   <body>
     <header>
@@ -22,14 +27,49 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1 id="name"></h1>
+      <section id="first-row">
+        <div id="image"></div>
 
-      <p id="time"></p>
+        <figure>
+          <h1 id="name"></h1>
 
-      <div id="ingredients"></div>
+          <figure id="button-save">
+            <button class="body-text" id="button-list">
+              Add to Shopping List
+            </button>
 
-      <div id="instructions"></div>
+            <a href="">
+              <img src="" alt="" />
+            </a>
+          </figure>
+
+          <figure id="class-servings">
+            <p class="body-text" id="time"></p>
+
+            <p class="body-text" id="servings"></p>
+          </figure>
+
+          <h2 class="sub-headline">Nutrition Facts per Serving</h2>
+          <div class="body-text" id="nutrition-facts"></div>
+        </figure>
+      </section>
+
+      <section id="second-row">
+        <figure>
+          <h2 class="sub-headline">Ingredients</h2>
+          <div class="body-text" id="ingredients"></div>
+        </figure>
+
+        <figure>
+          <h2 class="sub-headline">Instructions</h2>
+          <div class="body-text" id="instructions"></div>
+        </figure>
+      </section>
+
+      <h2 class="sub-headline">Notes</h2>
+      <textarea name="Text" id="textarea"></textarea>
     </main>
 
     <footer>

@@ -9,6 +9,14 @@ async function loadData() {
 }
 
 function displayRecipe(recipe) {
+  //Image
+  const imageContainer = document.getElementById("image");
+
+  const imageElement = document.createElement("img");
+  imageElement.classList.add("picture");
+  imageElement.src = recipe.image;
+  imageContainer.appendChild(imageElement);
+
   //Name
   const nameContainer = document.getElementById("name");
   nameContainer.innerText = recipe.name;
@@ -16,6 +24,22 @@ function displayRecipe(recipe) {
   //Prep time
   const prepContainer = document.getElementById("time");
   prepContainer.innerText = recipe.time;
+
+  //Servings
+  const servingsContainer = document.getElementById("servings");
+  servingsContainer.innerText = recipe.servings;
+
+  //Nutrition Facts
+  const nutritionContainer = document.getElementById("nutrition-facts");
+  const nutrition = recipe.nutrition_facts;
+
+  nutritionContainer.innerHTML = "";
+
+  for (let key in nutrition) {
+    const p = document.createElement("p");
+    p.textContent = `${key}: ${nutrition[key]}`;
+    nutritionContainer.appendChild(p);
+  }
 
   //Ingredients
   const ingredientsContainer = document.getElementById("ingredients");
@@ -34,7 +58,7 @@ function displayRecipe(recipe) {
   });
 
   //Instructions
-  const instructionsContainer = document.getElementById("steps");
+  const instructionsContainer = document.getElementById("instructions");
 
   recipe.instructions.forEach((instruction) => {
     const stepElement = document.createElement("div");
