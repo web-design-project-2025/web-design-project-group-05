@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Dishes</title>
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/recipe-page.css" />
-    <script src="java-script/recipes.js" defer></script>
+    <link rel="stylesheet" href="css/main-dishes.css" />
+    <script src="java-script/dishes.js" defer></script>
+    <title>Main Dishes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -27,49 +28,18 @@
         </ul>
       </nav>
     </header>
-
     <main>
-      <section id="first-row">
-        <div id="image"></div>
+      <figure id="background-image">
+        <img
+          id="background-image-img"
+          src="img-background-pictures/main-dishes-banner.jpg"
+          alt="Background Image with vegetables on the table"
+        />
 
-        <figure>
-          <h1 id="name"></h1>
-
-          <figure id="button-save">
-            <button class="body-text" id="button-list">
-              Add to Shopping List
-            </button>
-
-            <a href="">
-              <img src="" alt="" />
-            </a>
-          </figure>
-
-          <figure id="class-servings">
-            <p class="body-text" id="time"></p>
-
-            <p class="body-text" id="servings"></p>
-          </figure>
-
-          <h2 class="sub-headline">Nutrition Facts per Serving</h2>
-          <div class="body-text" id="nutrition-facts"></div>
-        </figure>
-      </section>
-
-      <section id="second-row">
-        <figure>
-          <h2 class="sub-headline">Ingredients</h2>
-          <div class="body-text" id="ingredients"></div>
-        </figure>
-
-        <figure>
-          <h2 class="sub-headline">Instructions</h2>
-          <div class="body-text" id="instructions"></div>
-        </figure>
-      </section>
-
-      <h2 class="sub-headline">Notes</h2>
-      <textarea name="Text" id="textarea"></textarea>
+        <!-- Text elements inside the figure to position them correctly -->
+        <h2 id="headline-long-image">MAIN DISHES</h2>
+      </figure>
+      <div id="recipe-list" class="info-container"></div>
     </main>
 
     <footer>

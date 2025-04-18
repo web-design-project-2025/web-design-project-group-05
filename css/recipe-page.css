@@ -1,3 +1,61 @@
+:root {
+  --primary-font: "Josefin Sans", sans-serif;
+  --text-font: "Jost", sans-serif;
+  --logo-font: "Gluten", serif;
+  --primary-color: #f4912e;
+  --secondary-color: #0d9277;
+  --hovering-color: #0b5e4f;
+  --beige: #f2f1df;
+  --text-white: #ffffff;
+}
+/*Headline */
+#name {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+}
+
+#button-list {
+  background-color: #0d9277;
+  border: none;
+  color: #ffffff;
+  border-radius: 2.5px;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.sub-headline {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.body-text {
+  font-family: var(--text-font);
+}
+
+#button-save {
+  margin-left: 0;
+}
+
+#button-list:hover {
+  background-color: #0b5e4f;
+}
+
+#class-servings {
+  margin-left: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+#nutrition-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
 .steps {
   padding: 10px;
   margin: 5px 0;
@@ -12,4 +70,18 @@
 
 .selected {
   background-color: beige;
+}
+
+.picture {
+  width: 100%;
+}
+
+#first-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#second-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
