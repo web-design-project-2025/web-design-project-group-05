@@ -74,7 +74,6 @@ nav ul, li {
   }
 }
 
-
 /* FOOTER */
 /*Background-color for the footer*/
 footer {
@@ -108,4 +107,5 @@ footer {
 li {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
+  line-height: 1.4; 
 }
