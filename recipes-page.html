@@ -10,8 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -40,18 +49,20 @@
               Add to Shopping List
             </button>
 
-            <a href="">
-              <img src="" alt="" />
-            </a>
+            <div id="saved-button"></div>
           </figure>
 
           <figure id="class-servings">
-            <p class="body-text" id="time"></p>
+            <div class="body-text" id="time"></div>
 
-            <p class="body-text" id="servings"></p>
+            <div class="body-text" id="servings"></div>
           </figure>
-
-          <h2 class="sub-headline">Nutrition Facts per Serving</h2>
+          <figure id="nutrition-button">
+            <h2 class="sub-headline" id="nutrition-facts-headline">
+              Nutrition Facts per Serving
+            </h2>
+            <button id="button-nutrition">+</button>
+          </figure>
           <div class="body-text" id="nutrition-facts"></div>
         </figure>
       </section>
@@ -68,8 +79,11 @@
         </figure>
       </section>
 
-      <h2 class="sub-headline">Notes</h2>
-      <textarea name="Text" id="textarea"></textarea>
+      <div id="around-textarea">
+        <h2 class="sub-headline">Notes</h2>
+
+        <textarea name="Text" id="textarea"></textarea>
+      </div>
     </main>
 
     <footer>
