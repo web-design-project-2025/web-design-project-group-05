@@ -40,11 +40,12 @@
       "image": "img/veg-wrap.jpg",
       "id": 11,
       "time": "15–20 mins",
+      "servings": "1 Serving",
       "nutrition_facts": {
-        "calories": 300,
-        "fat": 12,
-        "carbs": 35,
-        "protein": 10
+        "Calories": 300,
+        "Fat": 12,
+        "Carbs": 35,
+        "Protein": 10
       },
       "ingredients": [
         "1 whole grain wrap",
@@ -67,11 +68,12 @@
       "image": "img/tuna-salad.jpg",
       "id": 12,
       "time": "10 mins",
+      "servings": "1 Serving",
       "nutrition_facts": {
-        "calories": 250,
-        "fat": 15,
-        "carbs": 10,
-        "protein": 22
+        "Calories": 250,
+        "Fat": 15,
+        "Carbs": 10,
+        "Protein": 22
       },
       "ingredients": [
         "1 can tuna in water, drained",
@@ -92,11 +94,12 @@
       "image": "img/chickpea-bowl.jpg",
       "id": 13,
       "time": "20 mins",
+      "servings": "1 Serving",
       "nutrition_facts": {
-        "calories": 400,
-        "fat": 14,
-        "carbs": 45,
-        "protein": 15
+        "Calories": 400,
+        "Fat": 14,
+        "Carbs": 45,
+        "Protein": 15
       },
       "ingredients": [
         "1 cup cooked chickpeas",
@@ -118,11 +121,12 @@
       "image": "img/rice-veg.jpg",
       "id": 14,
       "time": "15-30 mins",
+      "servings": "1 Serving",
       "nutrition_facts": {
-        "calories": 300,
-        "fat": 8,
-        "carbs": 45,
-        "protein": 8
+        "Calories": 300,
+        "Fat": 8,
+        "Carbs": 45,
+        "Protein": 8
       },
       "ingredients": [
         "1 cup cooked brown or white rice",
@@ -144,11 +148,12 @@
       "image": "img/egg-muffin.jpg",
       "id": 15,
       "time": "25 mins",
+      "servings": "2 Servings",
       "nutrition_facts": {
-        "calories": 120,
-        "fat": 8,
-        "carbs": 2,
-        "protein": 10
+        "Calories": 120,
+        "Fat": 8,
+        "Carbs": 2,
+        "Protein": 10
       },
       "ingredients": [
         "4 eggs",
@@ -172,12 +177,12 @@
       "image": "img/zucchini-noodles.jpg",
       "id": 16,
       "time": "15 mins",
-      "nutrition": {
-        "calories": 300,
-        "protein": 10,
-        "carbs": 18,
-        "fat": 22,
-        "fiber": 4
+      "servings": "4 Servings",
+      "nutrition_facts": {
+        "Calories": 300,
+        "Protein": 10,
+        "Carbs": 18,
+        "Fat": 22
       },
       "ingredients": [
         "2 medium zucchinis, spiralized",
@@ -199,12 +204,12 @@
       "image": "img/baked-salmon.jpg",
       "id": 17,
       "time": "30 mins",
-      "nutrition": {
-        "calories": 450,
-        "protein": 35,
-        "carbs": 20,
-        "fat": 28,
-        "fiber": 5
+      "servings": "2 Servings",
+      "nutrition_facts": {
+        "Calories": 450,
+        "Protein": 35,
+        "Carbs": 20,
+        "Fat": 28
       },
       "ingredients": [
         "2 salmon fillets",
@@ -227,12 +232,12 @@
       "image": "img/stuffed-potato.jpg",
       "id": 18,
       "time": "40 mins",
-      "nutrition": {
-        "calories": 400,
-        "protein": 15,
-        "carbs": 45,
-        "fat": 18,
-        "fiber": 9
+      "servings": "2 Servings",
+      "nutrition_facts": {
+        "Calories": 400,
+        "Protein": 15,
+        "Carbs": 45,
+        "Fat": 18
       },
       "ingredients": [
         "2 medium sweet potatoes",

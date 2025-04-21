@@ -16,6 +16,12 @@ function displayRecipes(recipes) {
     const recipeCard = document.createElement("div");
     recipeCard.classList.add("recipe-card");
 
+    //help from ChatGPT to create a link that links to each recipe: https://chatgpt.com/share/6806528c-4c58-8010-9bf9-5cd9f6f9f436, accessed: 21.04.25
+    //create link to go to correct recipe
+    const link = document.createElement("a");
+    link.href = `recipes-page.html?id=${recipe.id}`;
+    link.classList.add("recipe-card-link");
+
     // Image
     const image = document.createElement("img");
     image.src = recipe.image;
@@ -45,9 +51,14 @@ function displayRecipes(recipes) {
     });
 
     // Append info and icon to card
+    link.appendChild(image);
+    link.appendChild(recipeInfo);
+    recipeCard.appendChild(link);
+    recipeCard.appendChild(saveIcon);
+    /* recipeCard.appendChild(link);
     recipeCard.appendChild(image);
     recipeCard.appendChild(recipeInfo);
-    recipeCard.appendChild(saveIcon);
+    recipeCard.appendChild(saveIcon); */
 
     // Add the full recipe card to the list
     recipeListContainer.appendChild(recipeCard);

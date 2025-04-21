@@ -4,8 +4,21 @@ async function loadData() {
   const recipeResponse = await fetch("json/recipe.json");
   const recipeJSON = await recipeResponse.json();
   recipes = recipeJSON.recipes;
-  console.log(recipeJSON);
-  displayRecipe(recipes[0]);
+  //displayRecipe(recipes);
+
+  //The following 3 lines are from: https://chatgpt.com/share/6806528c-4c58-8010-9bf9-5cd9f6f9f436 accessed: 21.04
+  //Get recipe ID from URL
+  const params = new URLSearchParams(window.location.search);
+  const recipeId = parseInt(params.get("id"));
+
+  //Finding the matching recipe
+  const selectedRecipe = recipes.find((recipe) => recipe.id === recipeId);
+
+  if (selectedRecipe) {
+    displayRecipe(selectedRecipe);
+  } else {
+    console.error("Recipe could not be found");
+  }
 }
 
 function displayRecipe(recipe) {
@@ -60,9 +73,10 @@ function displayRecipe(recipe) {
       nutritionButtonElement.innerHTML = "-";
 
       for (let key in nutrition) {
-        const p = document.createElement("p");
-        p.textContent = `${key}: ${nutrition[key]}`;
-        nutritionContainer.appendChild(p);
+        const facts = document.createElement("p");
+        facts.textContent = `${key}: ${nutrition[key]}`;
+        facts.classList.add("facts-style");
+        nutritionContainer.appendChild(facts);
       }
     }
   });

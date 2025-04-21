@@ -31,6 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 #background-image-img {
@@ -60,18 +61,34 @@
 
 .align-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+}
+
+/*Picture spaghetti with paper - centering it in the middle*/
+.recipe-picture {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .picture-description {
-  width: 90%;
+  width: 70%;
 }
 
 /*Favorite Recipes*/
+#our-favorites-headline {
+  margin-top: 5rem;
+}
+
 .favorite-recipes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--beige);
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 7rem;
 }
 
 /*Our secret*/
@@ -90,6 +107,8 @@
   color: #ffffff;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
 }
 
 #quote-text {
@@ -98,6 +117,9 @@
 }
 
 /*Why choose us?*/
+.sub-headline {
+  margin-top: 0;
+}
 
 .number-text {
   font-family: var(--primary-font);
