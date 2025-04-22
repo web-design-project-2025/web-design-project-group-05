@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/category-page.css" />
     <title>Munchly</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,22 +20,105 @@
       </a>
       <nav>
         <ul class="navigation-menu">
-          <li><a href="#">ALL RECIPES</a></li>
-          <li><a href="#">SAVED</a></li>
-          <li><a href="#">SHOPPING LIST</a></li>
-          <li><a href="#">LOG IN</a></li>
+          <li><a href="all-recipes.html">ALL RECIPES</a></li>
+          <li><a href="saved.html">SAVED</a></li>
+          <li><a href="shopping-list.html">SHOPPING LIST</a></li>
+          <li><a href="log-in.html">LOG IN</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      hello
+      <figure id="background-image">
+        <img
+          id="background-image-img"
+          src="img-background-pictures/top-background-image-cut.png"
+          alt="Background Image with vegetables on the table"
+        />
+        <figcaption class="text-on-banner">
+          <span class="munchly-banner">MUNCHLY</span> <br />
+          Welcome! Looking for tasty meals that are good for you? You’re in the
+          right place! Explore our collection of healthy, wholesome recipes –
+          perfect for busy days, cozy nights, and everything in between. Cooking
+          healthy has never been this simple or this delicious!
+        </figcaption>
+      </figure>
+
+      <section class="button-container">
+        <button class="button">View all recipes</button>
+      </section>
+
+      <h1 class="categories-heading">CATEGORIES</h1>
+
+      <section class="grid-categories">
+        <figure class="grid-item">
+          <img
+            src="img-categories/breakfast.jpg"
+            alt="Image for breakfast category"
+          />
+          <figcaption>Breakfast</figcaption>
+        </figure>
+
+
+        <figure class="grid-item">
+          <img
+            src="img-categories/main-dishes.jpg"
+            alt="Image for main dishes category"
+          />
+          <a href="main-dishes.html">
+          Main Dishes</a>
+        </figure>
+      
+        <figure class="grid-item">
+          <img
+            src="img-categories/snacks.jpg"
+            alt="Image for snacks category"
+          />
+          <figcaption>Snacks</figcaption>
+        </figure>
+
+        <figure class="grid-item">
+          <img
+            src="img-categories/beverages.jpg"
+            alt="Image for beverages category"
+          />
+          <figcaption>Beverages</figcaption>
+        </figure>
+      </section>
+
+      <h1 class="food-orakel-heading">FOOD ORAKEL</h1>
+
+      <section class="grid-orakel">
+        <figure class="food-orakel-grid">
+          <img
+            src="img-categories/food.orakel.png"
+            alt="Image for food orakel"
+          />
+          <figcaption>Breakfast</figcaption>
+        </figure>
+
+        <figure class="food-orakel-grid">
+          <img
+            src="img-categories/food.orakel.png"
+            alt="Image for food orakel"
+          />
+          <figcaption>Main dishes</figcaption>
+        </figure>
+
+        <figure class="food-orakel-grid">
+          <img
+            src="img-categories/food.orakel.png"
+            alt="Image for food orakel"
+          />
+          <figcaption>Snacks</figcaption>
+        </figure>
+      </section>
     </main>
 
     <footer>
       <section class="footer">
         <ul>
-          <li class="footer-header">About us</li>
+          <li class="footer-header"><a href="about-us.html">About us</a></li>
           <li>Our Story</li>
           <li>Our Values</li>
           <li>Meet the Team</li>

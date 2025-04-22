@@ -45,6 +45,12 @@
     color: var(--secondary-color); 
   }
 
+  a {
+   color: black;
+   font-family: var(--primary-font);
+
+  }
+
   /* BUTTON */
   .button-container {
     display: flex;
@@ -82,7 +88,7 @@
     border-radius: 2.5px;
   }
   
-  .grid-item figcaption {
+  .grid-item figcaption a {
     font-size: 1.2rem;
     font-family: var(--primary-font);
   }
