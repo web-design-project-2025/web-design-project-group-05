@@ -121,14 +121,21 @@ loadData();
 document.addEventListener("DOMContentLoaded", () => {
   const inputElement = document.getElementById("textarea");
 
+  //Get recipe ID from URL
+  const params = new URLSearchParams(window.location.search);
+  const recipeId = params.get("id");
+
+  //Use one key per recipe
+  const storageKey = `recipeNotes_${recipeId}`;
+
   // Load saved notes if they exist
-  const savedNotes = localStorage.getItem("recipeNotes");
+  const savedNotes = localStorage.getItem(storageKey);
   if (savedNotes) {
     inputElement.value = savedNotes;
   }
 
   // Save notes as the user types
   inputElement.addEventListener("input", () => {
-    localStorage.setItem("recipeNotes", inputElement.value);
+    localStorage.setItem(storageKey, inputElement.value);
   });
 });
