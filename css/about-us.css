@@ -1,15 +1,3 @@
-:root {
-  --primary-font: "Josefin Sans", sans-serif;
-  --text-font: "Jost", sans-serif;
-  --logo-font: "Gluten", serif;
-  --primary-color: #f4912e;
-  --secondary-color: #0d9277;
-  --hovering-color: #0b5e4f;
-  --beige: #f2f1df;
-  --text-black: #101010;
-  --text-white: #ffffff;
-}
-
 /*Body text*/
 .body-text {
   font-family: var(--text-font);
@@ -44,7 +32,7 @@
   position: absolute;
   margin-top: 0;
   margin-bottom: 0;
-  color: #0d9277;
+  color: var(--secondary-color);
   text-align: center;
   font-size: 2rem;
   top: 50%;
