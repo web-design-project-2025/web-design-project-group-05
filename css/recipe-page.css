@@ -23,20 +23,24 @@
 /*FIRST ROW*/
 #first-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 0.7fr 1.3fr;
+
   margin-bottom: 3rem;
 }
 
 /*IMAGE*/
 .picture {
-  width: 70%;
+  width: 100%;
 }
 
 /*HEADLINE*/
+#information {
+  margin-left: 3rem;
+}
+
 #name {
   font-family: var(--primary-font);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 /*BUTTON SHOPPING-LIST*/
@@ -131,23 +135,46 @@
 .ingredients-steps {
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #f2f1df;
+  /*border: 1px solid #0b5e4f;*/
+  color: black;
+}
+
+#background_ingredients {
+  background-color: #f2f1df;
+  padding: 2rem;
+  border-radius: 2.5px;
+}
+
+#background_instructions {
+  background-color: #f2f1df;
+  padding: 2rem;
+  border-radius: 2.5px;
 }
 
 .instruction-steps {
   padding: 10px;
   margin: 5px 0;
   border: 1px solid #f2f1df;
+  color: black;
 }
 
 /*if item is selected*/
 .selected {
-  background-color: beige;
+  /*color: #0b5e4f;*/
+  background-color: #f4912e;
+  color: #f2f1df;
 }
 
 /*NOTES*/
 #around-textarea {
-  background-color: #f2f1df;
+  background-color: #0d9277;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+#textarea {
+  width: 90%;
+}
+#notes-headline {
+  color: #f2f1df;
 }

@@ -44,7 +44,6 @@ function displayRecipe(recipe) {
     saveIcon.classList.toggle("fa-regular");
     saveIcon.classList.toggle("fa-solid");
   });
-
   saveContainer.appendChild(saveIcon);
 
   //Prep time
@@ -62,14 +61,14 @@ function displayRecipe(recipe) {
 
   // Show facts when button is clicked and then hide again when clicked again
   nutritionButtonElement.addEventListener("click", () => {
-    // If the nutrition facts are already visible, hide them. If they're hidden, show them.
+    // If the nutrition facts are already visible, hide them. If they're hidden, show them
     if (nutritionContainer.innerHTML !== "") {
       nutritionContainer.innerHTML = "";
       nutritionButtonElement.innerHTML = "+";
     } else {
       // If the nutrition facts are hidden, display them
       const nutrition = recipe.nutrition_facts;
-      nutritionContainer.innerHTML = ""; // Clear the previous content (if any)
+      nutritionContainer.innerHTML = "";
       nutritionButtonElement.innerHTML = "-";
 
       for (let key in nutrition) {
