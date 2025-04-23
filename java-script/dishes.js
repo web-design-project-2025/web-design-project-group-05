@@ -55,10 +55,6 @@ function displayRecipes(recipes) {
     link.appendChild(recipeInfo);
     recipeCard.appendChild(link);
     recipeCard.appendChild(saveIcon);
-    /* recipeCard.appendChild(link);
-    recipeCard.appendChild(image);
-    recipeCard.appendChild(recipeInfo);
-    recipeCard.appendChild(saveIcon); */
 
     // Add the full recipe card to the list
     recipeListContainer.appendChild(recipeCard);
