@@ -64,6 +64,7 @@
   font-size: 1.3rem;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  color: black;
 }
 
 .recipe-info p {
@@ -123,7 +124,7 @@
   flex: 1 1 0; /* allows the filters to grow and shrink */
 }
 
-.search-container {
+.search-container{
   position: relative;
   display: inline-block; /*keeps container tight to input size */
 }

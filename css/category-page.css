@@ -48,7 +48,6 @@
   a {
    color: black;
    font-family: var(--primary-font);
-
   }
 
   /* BUTTON */
@@ -75,7 +74,7 @@
 /* GRID FOR CATEGORIES */
   .grid-categories {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     justify-items: center; 
   }
   
@@ -88,18 +87,24 @@
     border-radius: 2.5px;
   }
   
-  .grid-item figcaption a {
+  .grid-item figcaption  {
     font-size: 1.2rem;
     font-family: var(--primary-font);
+  }
+
+  .grid-item a  {
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    text-decoration: none;
   }
 
   /* FOOD ORAKEL */
   .food-orakel-heading {
     margin-left: 7%;
     font-size: 2rem;
-    margin-top: 10rem; /* spacing from image */
+    margin-top: 10rem; 
     font-family: var(--primary-font);
-    color: var(--secondary-color); /* dark grey for nice contrast */
+    color: var(--secondary-color); 
   }
 
   .food-orakel-grid figcaption {
