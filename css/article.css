@@ -2,10 +2,10 @@
 #article-heading {
   font-family: var(--primary-font);
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: var(--text-black);
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 3rem 0 1.5rem;
 }
 
 #article-subheading {
@@ -14,5 +14,89 @@
   font-size: 1rem;
   color: var(--secondary-color);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+}
+
+/*Main image */
+.img-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+#main-img {
+  width: 100%;
+  max-width: 1400px;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Content */
+.page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 3.7rem 1.5rem;
+}
+
+/* Introduction paragraph */
+.intro {
+  grid-column: span 3; /* Make intro span across 3 columns */
+}
+
+.intro p {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-black);
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.dropcap {
+  float: left;
+  font-size: 3.5rem;
+  line-height: 1;
+  padding-right: 0.2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  height: 2rem; /* Helps prevent vertical misalignment */
+}
+
+/* Section 2 */
+.section-2 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+  width: 85vw; /* Full viewport width */
+  box-sizing: border-box; /* Prevent padding from breaking layout */
+}
+
+.section-heading {
+  grid-column: span 2;
+  font-family: var(--primary-font);
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--text-black);
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.text-2 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-black);
+  text-align: justify;
+  line-height: 1.5;
+  grid-column: span 2; /* Make text span across 2 columns */
+}
+
+.image-2 img {
+  width: 115%;
+  height: auto;
+  border-radius: 4px;
+  place-self: start;
+  padding: 5.1rem 0 0 0;
 }
