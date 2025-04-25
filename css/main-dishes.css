@@ -81,6 +81,10 @@
   padding: 1rem;
 }
 
+a.recipe-card-link {
+  text-decoration: none;
+  color: var(--text-black);
+}
 .save-icon {
   position: absolute;
   bottom: 4rem;

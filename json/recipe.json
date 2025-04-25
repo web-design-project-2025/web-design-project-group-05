@@ -584,6 +584,492 @@
       ],
       "category_ids": [1, 2],
       "category": "main"
+    },
+    {
+      "id": 19,
+      "name": "Cucumber Rounds with Cream Cheese",
+      "image": "img-snacks/cucumber-rounds.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 120,
+        "Fat": 10,
+        "Carbs": 6,
+        "Protein": 3
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cucumber",
+          "ingredient": "sliced into rounds",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "cream cheese",
+          "comment": "softened"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "fresh herbs",
+          "comment": "e.g. dill, chives"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "sesame seeds",
+          "comment": "toasted"
+        }
+      ],
+      "instructions": [
+        "Mix cream cheese with chopped herbs.",
+        "Spread the mixture on cucumber rounds.",
+        "Top with sesame seeds.",
+        "Serve immediately."
+      ],
+      "category_ids": [2],
+      "category": "snacks"
+    },
+    {
+      "id": 20,
+      "name": "Avocado Rice Cakes",
+      "image": "img-snacks/avocado-rice-cakes.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 10,
+        "Carbs": 20,
+        "Protein": 3
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "rice cakes",
+          "comment": "gluten-free if needed"
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "avocado",
+          "comment": "mashed"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Lemon juice, chili flakes, salt",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Spread mashed avocado on rice cakes.",
+        "Top with lemon juice, chili flakes, and salt.",
+        "Serve immediately."
+      ],
+      "category_ids": [1, 3, 4]
+    },
+    {
+      "id": 21,
+      "name": "Cottage Cheese Muesli Strawberry Bowl",
+      "image": "img-snacks/cottage-cheese-muesli.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 250,
+        "Fat": 9,
+        "Carbs": 28,
+        "Protein": 12
+      },
+      "ingredients": [
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "cottage cheese",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "rolled oats",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "fresh strawberries",
+          "comment": "sliced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "honey",
+          "comment": "optional"
+        }
+      ],
+      "instructions": [
+        "Layer cottage cheese, oats, and strawberries in a bowl.",
+        "Drizzle with honey and serve immediately."
+      ],
+      "category_ids": [2, 3],
+      "category": "snacks"
+    },
+    {
+      "id": 22,
+      "name": "Tortilla with Shrimp and Avocado",
+      "image": "img-snacks/tortilla-avocado-shrimp.jpg",
+      "time": { "value": 15, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 320,
+        "Fat": 18,
+        "Carbs": 30,
+        "Protein": 12
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "whole wheat tortilla",
+          "ingredient": null,
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "avocado",
+          "ingredient": "sliced",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "red onion",
+          "comment": "sliced thinly"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "ingredient": "shrimp",
+          "comment": "cooked and peeled"
+        }
+      ],
+      "instructions": [
+        "Place the tortilla on a plate.",
+        "Layer avocado, red onion, and shrimps on top.",
+        "Fold the tortilla and serve."
+      ],
+      "category_ids": [1, 2],
+      "category": "snacks"
+    },
+    {
+      "id": 23,
+      "name": "Spicy Mango Salsa",
+      "image": "img-snacks/spicy-mango-salsa.jpg",
+      "time": { "value": 8, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 70,
+        "Fat": 0,
+        "Carbs": 18,
+        "Protein": 1
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "mango",
+          "ingredient": "peeled and diced",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "red onion",
+          "comment": "diced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "cilantro",
+          "comment": "chopped"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "lime juice",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "jalapeño",
+          "comment": "minced"
+        }
+      ],
+      "instructions": [
+        "Combine all ingredients in a bowl.",
+        "Stir gently and serve."
+      ],
+      "category_ids": [1],
+      "category": "snacks"
+    },
+    {
+      "id": 24,
+      "name": "Guacamole Dip",
+      "image": "img-snacks/guacamole-dip.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 220,
+        "Fat": 20,
+        "Carbs": 12,
+        "Protein": 3
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "ripe avocados",
+          "comment": "peeled, pitted and mashed"
+        },
+        {
+          "amount": 1,
+          "unit": "small",
+          "ingredient": "lime",
+          "comment": "juiced"
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "ingredient": "garlic",
+          "comment": "minced"
+        },
+        {
+          "amount": 1,
+          "unit": "small",
+          "ingredient": "tomato",
+          "comment": "finely diced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "onion",
+          "comment": "finely chopped"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt",
+          "comment": "to taste"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Black pepper",
+          "comment": "to taste"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh cilantro",
+          "comment": "finely chopped"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Red chili flakes or fresh chopped chili",
+          "comment": "optional"
+        }
+      ],
+      "instructions": [
+        "Mash the avocados in a bowl.",
+        "Add lime juice, garlic, tomato, onion, salt, black pepper, cilantro, and chili.",
+        "Mix well until combined.",
+        "Serve immediately."
+      ],
+      "category_ids": [1, 2],
+      "category": "snacks"
+    },
+    {
+      "id": 25,
+      "name": "Granola Bar with Nuts and Fruits",
+      "image": "img-snacks/granola-bar.jpg",
+      "time": { "value": 25, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 200,
+        "Fat": 10,
+        "Carbs": 22,
+        "Protein": 4
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "oats",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "mixed nuts",
+          "comment": "chopped"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "raisins",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "candied fruits",
+          "comment": "chopped"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "honey",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "peanut butter",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Mix oats, nuts, raisins, and candied fruits in a bowl.",
+        "In a separate bowl, combine honey and peanut butter, then heat slightly to melt.",
+        "Pour the honey mixture over the dry ingredients and stir.",
+        "Press into a lined pan and refrigerate for 20 minutes before cutting into bars."
+      ],
+      "category_ids": [2],
+      "category": "snacks"
+    },
+    {
+      "id": 26,
+      "name": "Avocado Rice Cakes",
+      "image": "img-snacks/avocado-rice-cakes.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 10,
+        "Carbs": 20,
+        "Protein": 3
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "rice cakes",
+          "comment": "gluten-free if needed"
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "avocado",
+          "comment": "mashed"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Lemon juice, chili flakes, salt",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Spread mashed avocado on rice cakes.",
+        "Top with lemon juice, chili flakes, and salt.",
+        "Serve immediately."
+      ],
+      "category_ids": [1, 3, 4],
+      "category": "snacks"
+    },
+    {
+      "id": 27,
+      "name": "Dates with Coconut Shreds",
+      "image": "img-snacks/dates-coconut.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 150,
+        "Fat": 9,
+        "Carbs": 20,
+        "Protein": 2
+      },
+      "ingredients": [
+        {
+          "amount": 10,
+          "unit": null,
+          "ingredient": "pitted dates",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "unsweetened shredded coconut",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Roll the pitted dates in the shredded coconut.",
+        "Press gently to coat them evenly with coconut.",
+        "Optionally, slice the dates in half and stuff them with almond or peanut butter before rolling in coconut.",
+        "Serve immediately or refrigerate for a few minutes."
+      ],
+      "category_ids": [2],
+      "category": "snacks"
+    },
+    {
+      "id": 28,
+      "name": "Oatmeal Pudding with Blackberries",
+      "image": "img-snacks/oatmeal-pudding.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 6,
+        "Carbs": 30,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "rolled oats",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "almond milk",
+          "comment": null
+        },
+        { "amount": 1, "unit": "tbsp", "ingredient": "honey", "comment": null },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "blackberries",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "vanilla extract",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Combine oats, almond milk, honey, and vanilla extract in a bowl.",
+        "Let it sit in the fridge for at least 2 hours or overnight to thicken.",
+        "Top with fresh blackberries before serving."
+      ],
+      "category_ids": [2],
+      "category": "snacks"
     }
   ]
 }
