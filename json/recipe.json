@@ -634,7 +634,7 @@
     },
     {
       "id": 20,
-      "name": "Avocado Rice Cakes",
+      "name": "Avocado Rice Cake",
       "image": "img-snacks/avocado-rice-cakes.jpg",
       "time": { "value": 5, "unit": "minutes" },
       "servings": { "value": 1, "unit": "serving" },
@@ -666,10 +666,10 @@
       ],
       "instructions": [
         "Spread mashed avocado on rice cakes.",
-        "Top with lemon juice, chili flakes, and salt.",
+        "Top with lemon juice, chili flakes and salt.",
         "Serve immediately."
       ],
-      "category_ids": [1, 3, 4]
+      "category_ids": [1, 2, 3, 4]
     },
     {
       "id": 21,

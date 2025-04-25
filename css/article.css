@@ -21,7 +21,7 @@
 .img-container {
   display: flex;
   justify-content: center;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 #main-img {
@@ -36,7 +36,7 @@
 .page-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 3.7rem 1.5rem;
+  padding: 0 4.5rem 1.5rem;
 }
 
 /* Introduction paragraph */
@@ -71,6 +71,7 @@
   align-items: start;
   width: 85vw; /* Full viewport width */
   box-sizing: border-box; /* Prevent padding from breaking layout */
+  border-radius: 4px;
 }
 
 .section-heading {
@@ -80,7 +81,8 @@
   font-size: 1.7rem;
   color: var(--text-black);
   text-align: start;
-  margin-bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .text-2 {
@@ -90,7 +92,7 @@
   color: var(--text-black);
   text-align: justify;
   line-height: 1.5;
-  grid-column: span 2; /* Make text span across 2 columns */
+  grid-column: span 2;
 }
 
 .image-2 img {
@@ -98,5 +100,93 @@
   height: auto;
   border-radius: 4px;
   place-self: start;
-  padding: 5.1rem 0 0 0;
+  padding: 5.2rem 0 0 0;
+}
+
+/* Section 3 - Quote with background */
+.section-3 {
+  grid-column: span 3;
+  background-color: #fdf5e6; /* light warm beige, adjust as needed */
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 4px;
+  border-left: 5px solid var(--secondary-color); /* adds a stylish quote line */
+}
+
+.text-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-box {
+  font-family: var(--primary-font);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--text-black);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Recipe Recommendations Section */
+
+.recipe-recommendation-section {
+  grid-column: span 3;
+  padding: 2rem 3.7rem;
+}
+
+.recipe-recommendation-section h2 {
+  font-family: var(--primary-font);
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--text-black);
+  text-align: start;
+  margin-top: 1.5rem;
+  margin-bottom: 2.8rem;
+  margin-left: -3.7rem; /* Shift the heading to the left */
+}
+
+.recipe-text-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  text-align: left;
+}
+
+.recipe-text {
+  position: relative;
+  padding-left: 1.5rem;
+  font-family: var(--primary-font);
+}
+
+.recipe-text {
+  position: relative;
+  padding-left: 1.5rem;
+  font-family: var(--primary-font);
+}
+
+.recipe-text h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-black);
+}
+
+.recipe-text p {
+  font-size: 1rem;
+  color: var(--text-black);
+  text-align: justify;
+  line-height: 1.5;
+  margin-top: 0rem;
+}
+
+.recipe-text .dropcap {
+  font-size: 3rem;
+  line-height: 1;
+  padding-right: 0.4rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
 }
