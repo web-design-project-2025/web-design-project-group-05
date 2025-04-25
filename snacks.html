@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main-dishes.css" />
+    <title>Snacks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img id="logo" src="img/munchly-logo.png" alt="Munchly Logo" />
+      </a>
+      <nav>
+        <ul class="navigation-menu">
+          <li><a href="all-recipes.html">ALL RECIPES</a></li>
+          <li><a href="saved.html">SAVED</a></li>
+          <li><a href="shopping-list.html">SHOPPING LIST</a></li>
+          <li><a href="log-in.html">LOG IN</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <figure id="background-image">
+        <img
+          id="background-image-img"
+          src="img-background-pictures/main-dishes-banner.jpg"
+          alt="Background Image with vegetables on the table"
+        />
+        <h2 id="headline-long-image">SNACKS</h2>
+      </figure>
+
+      <div class="filter-bar">
+        <div class="filters-group">
+          <label><input type="checkbox" /> Vegetarian</label>
+          <label><input type="checkbox" /> Vegan</label>
+          <label><input type="checkbox" /> Gluten-free</label>
+          <label><input type="checkbox" /> Lactose-free</label>
+          <label><input type="checkbox" /> Spicy</label>
+        </div>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="nameSearch"
+            class="search-input"
+            placeholder=""
+          />
+          <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
+        </div>
+      </div>
+
+      <div id="recipe-list" class="info-container"></div>
+    </main>
+
+    <footer>
+      <section class="footer">
+        <ul>
+          <li class="footer-header"><a href="about-us.html">About us</a></li>
+          <li>Our Story</li>
+          <li>Our Values</li>
+          <li>Meet the Team</li>
+          <li>Why Choose Us</li>
+        </ul>
+
+        <ul>
+          <li class="footer-header">Conditions</li>
+          <li>Usage Policy</li>
+          <li>Privacy Data Protection</li>
+          <li>Limitation of Liability</li>
+        </ul>
+
+        <ul>
+          <li class="footer-header">Contacts</li>
+          <li>Email</li>
+          <li>Social Media</li>
+          <li>Customer Support</li>
+          <li>Feedback & Suggestions</li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
