@@ -1,10 +1,16 @@
 let recipes = [];
+let categories = [];
 
 async function loadData() {
+  // Fetch the recipe data
   const recipeResponse = await fetch("json/recipe.json");
   const recipeJSON = await recipeResponse.json();
-  recipes = recipeJSON.recipes;
-  //displayRecipe(recipes);
+  recipes = recipeJSON.recipe;
+
+  // Fetch the category data
+  const categoryResponse = await fetch("json/category.json");
+  const categoryJSON = await categoryResponse.json();
+  categories = categoryJSON.category;
 
   //The following 3 lines are from: https://chatgpt.com/share/6806528c-4c58-8010-9bf9-5cd9f6f9f436 accessed: 21.04
   //Get recipe ID from URL
@@ -13,30 +19,31 @@ async function loadData() {
 
   //Finding the matching recipe
   const selectedRecipe = recipes.find((recipe) => recipe.id === recipeId);
-
   if (selectedRecipe) {
+    // If the recipe is found, display it
     displayRecipe(selectedRecipe);
   } else {
+    // If not found, log an error
     console.error("Recipe could not be found");
   }
 }
 
 function displayRecipe(recipe) {
-  //Image
+  // Image
   const imageContainer = document.getElementById("image");
-
   const imageElement = document.createElement("img");
   imageElement.classList.add("picture");
   imageElement.src = recipe.image;
-  image.alt = recipe.name;
+  imageElement.alt = recipe.name;
   imageContainer.appendChild(imageElement);
 
-  //Name
+  // Name
   const nameContainer = document.getElementById("name");
   nameContainer.innerText = recipe.name;
 
   // Save button
   const saveContainer = document.getElementById("saved-button");
+  saveContainer.innerHTML = "";
 
   const saveIcon = document.createElement("i");
   saveIcon.classList.add("fa-regular", "fa-bookmark", "save-icon");
@@ -46,27 +53,23 @@ function displayRecipe(recipe) {
   });
   saveContainer.appendChild(saveIcon);
 
-  //Prep time
+  // Prep time
   const prepContainer = document.getElementById("time");
-  prepContainer.innerText = recipe.time;
+  prepContainer.innerText = `${recipe.time.value} ${recipe.time.unit}`;
 
-  //Servings
+  // Servings
   const servingsContainer = document.getElementById("servings");
-  servingsContainer.innerText = recipe.servings;
+  servingsContainer.innerText = `${recipe.servings.value} ${recipe.servings.unit}`;
 
-  //Nutrition Facts
-  //When Button gets clicked
+  // Nutrition Facts
   const nutritionButtonElement = document.getElementById("button-nutrition");
   const nutritionContainer = document.getElementById("nutrition-facts");
 
-  // Show facts when button is clicked and then hide again when clicked again
   nutritionButtonElement.addEventListener("click", () => {
-    // If the nutrition facts are already visible, hide them. If they're hidden, show them
     if (nutritionContainer.innerHTML !== "") {
       nutritionContainer.innerHTML = "";
       nutritionButtonElement.innerHTML = "+";
     } else {
-      // If the nutrition facts are hidden, display them
       const nutrition = recipe.nutrition_facts;
       nutritionContainer.innerHTML = "";
       nutritionButtonElement.innerHTML = "-";
@@ -80,31 +83,36 @@ function displayRecipe(recipe) {
     }
   });
 
-  //Ingredients
+  // Ingredients
   const ingredientsContainer = document.getElementById("ingredients");
+  ingredientsContainer.innerHTML = "";
 
   recipe.ingredients.forEach((ingredient) => {
     const ingredientElement = document.createElement("div");
     ingredientElement.classList.add("ingredients-steps");
-    ingredientElement.textContent = ingredient;
-    //ingredientsContainer.appendChild(ingredientElement);
 
-    //function to click it
-    // toggle function from: https://www.w3schools.com/howto/howto_js_toggle_class.asp
+    //show comment with bracets
+    const comment = ingredient.comment ? ` (${ingredient.comment})` : "";
+
+    const allIngredients = `${ingredient.amount ?? ""} ${
+      ingredient.unit ?? ""
+    } ${ingredient.ingredient}${comment}`.trim();
+    ingredientElement.textContent = allIngredients;
+
     ingredientElement.addEventListener("click", () => {
       ingredientElement.classList.toggle("selected");
     });
+
     ingredientsContainer.appendChild(ingredientElement);
   });
 
-  //Instructions
+  // Instructions
   const instructionsContainer = document.getElementById("instructions");
 
   recipe.instructions.forEach((instruction) => {
     const stepElement = document.createElement("div");
     stepElement.classList.add("instruction-steps");
     stepElement.textContent = instruction;
-    //instructionsContainer.appendChild(stepElement);
 
     stepElement.addEventListener("click", () => {
       stepElement.classList.toggle("selected");

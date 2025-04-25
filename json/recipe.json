@@ -1,11 +1,11 @@
 {
-  "recipes": [
+  "recipe": [
     {
+      "id": 10,
       "name": "Indian Curry",
       "image": "img/indian-curry.jpg",
-      "id": 10,
-      "time": "60 mins",
-      "servings": "6 Servings",
+      "time": { "value": 60, "unit": "minutes" },
+      "servings": { "value": 6, "unit": "servings" },
       "nutrition_facts": {
         "Calories": 250,
         "Fat": 10,
@@ -13,18 +13,73 @@
         "Protein": 8
       },
       "ingredients": [
-        "1 tbsp olive oil",
-        "1 onion, chopped",
-        "2 garlic cloves, minced",
-        "1 tbsp ginger, grated",
-        "2 tomatoes, chopped",
-        "1 cup chopped veggies (potato, carrots, peas, cauliflower)",
-        "1 tsp curry powder",
-        "½ tsp turmeric",
-        "1 tsp cumin",
-        "Salt to taste",
-        "1 cup water or light coconut milk",
-        "Fresh coriander (optional)"
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "onion",
+          "comment": "chopped"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "garlic cloves",
+          "comment": "minced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "ginger",
+          "comment": "grated"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "tomatoes",
+          "comment": "chopped"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "chopped veggies (potato, carrots, peas, cauliflower)",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "curry powder",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "turmeric",
+          "comment": null
+        },
+        { "amount": 1, "unit": "tsp", "ingredient": "cumin", "comment": null },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt",
+          "comment": "to taste"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "water or light coconut milk",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh coriander",
+          "comment": "optional"
+        }
       ],
       "instructions": [
         "Heat oil in a pan. Sauté onions until golden.",
@@ -33,14 +88,16 @@
         "Stir in spices and cook for 2 minutes.",
         "Add veggies and water or coconut milk. Cover and simmer until veggies are tender (15–20 minutes).",
         "Garnish with coriander and serve."
-      ]
+      ],
+      "category_ids": [1, 2],
+      "category": "main"
     },
     {
+      "id": 11,
       "name": "Veg Wrap",
       "image": "img/veg-wrap.jpg",
-      "id": 11,
-      "time": "15–20 mins",
-      "servings": "1 Serving",
+      "time": { "value": 20, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
       "nutrition_facts": {
         "Calories": 300,
         "Fat": 12,
@@ -48,27 +105,64 @@
         "Protein": 10
       },
       "ingredients": [
-        "1 whole grain wrap",
-        "½ avocado, mashed",
-        "½ cup shredded carrots",
-        "¼ cup chopped cucumber",
-        "¼ cup hummus",
-        "Spinach or lettuce leaves",
-        "Salt, pepper, lemon juice"
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "whole grain wrap",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "avocado",
+          "comment": "mashed"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "shredded carrots",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "chopped cucumber",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "hummus",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Spinach or lettuce leaves",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt, pepper, lemon juice",
+          "comment": null
+        }
       ],
       "instructions": [
         "Spread hummus and mashed avocado on the wrap.",
         "Layer with veggies and greens.",
         "Season with salt, pepper, and a squeeze of lemon.",
         "Roll tightly and slice in half."
-      ]
+      ],
+      "category_ids": [1, 2, 4],
+      "category": "main"
     },
     {
+      "id": 12,
       "name": "Tuna Salad",
       "image": "img/tuna-salad.jpg",
-      "id": 12,
-      "time": "10 mins",
-      "servings": "1 Serving",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
       "nutrition_facts": {
         "Calories": 250,
         "Fat": 15,
@@ -76,25 +170,57 @@
         "Protein": 22
       },
       "ingredients": [
-        "1 can tuna in water, drained",
-        "2 tbsp Greek yogurt or light mayo",
-        "1 celery stalk, diced",
-        "¼ red onion, chopped",
-        "½ apple, chopped (optional)",
-        "Salt, pepper, lemon juice"
+        {
+          "amount": 1,
+          "unit": "can",
+          "ingredient": "tuna in water",
+          "comment": "drained"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "Greek yogurt or light mayo",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "stalk",
+          "ingredient": "celery",
+          "comment": "diced"
+        },
+        {
+          "amount": 0.25,
+          "unit": null,
+          "ingredient": "red onion",
+          "comment": "chopped"
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "apple",
+          "comment": "chopped (optional)"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt, pepper, lemon juice",
+          "comment": null
+        }
       ],
       "instructions": [
         "Mix all ingredients in a bowl.",
         "Adjust seasoning to taste.",
         "Serve on lettuce leaves, whole grain toast, or as is."
-      ]
+      ],
+      "category_ids": [2, 4],
+      "category": "main"
     },
     {
+      "id": 13,
       "name": "Chickpea Bowl",
       "image": "img/chickpea-bowl.jpg",
-      "id": 13,
-      "time": "20 mins",
-      "servings": "1 Serving",
+      "time": { "value": 20, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
       "nutrition_facts": {
         "Calories": 400,
         "Fat": 14,
@@ -102,26 +228,63 @@
         "Protein": 15
       },
       "ingredients": [
-        "1 cup cooked chickpeas",
-        "½ avocado, sliced",
-        "½ cup quinoa or brown rice",
-        "½ cup chopped cucumber and tomato",
-        "1 tbsp olive oil",
-        "Lemon juice, salt, pepper",
-        "Fresh parsley or cilantro"
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "cooked chickpeas",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "avocado",
+          "comment": "sliced"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "quinoa or brown rice",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "chopped cucumber and tomato",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Lemon juice, salt, pepper",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh parsley or cilantro",
+          "comment": null
+        }
       ],
       "instructions": [
         "Arrange cooked ingredients in a bowl.",
         "Drizzle with olive oil, lemon juice, and seasoning.",
         "Toss gently and top with herbs."
-      ]
+      ],
+      "category_ids": [1, 2, 3],
+      "category": "main"
     },
     {
+      "id": 14,
       "name": "Rice Veg",
       "image": "img/rice-veg.jpg",
-      "id": 14,
-      "time": "15-30 mins",
-      "servings": "1 Serving",
+      "time": { "value": 30, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
       "nutrition_facts": {
         "Calories": 300,
         "Fat": 8,
@@ -129,26 +292,58 @@
         "Protein": 8
       },
       "ingredients": [
-        "1 cup cooked brown or white rice",
-        "½ cup chopped bell pepper",
-        "½ cup peas and carrots",
-        "1 tbsp soy sauce or tamari",
-        "1 tsp sesame oil or olive oil",
-        "1 clove garlic, minced"
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "cooked brown or white rice",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "chopped bell pepper",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "peas and carrots",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "soy sauce or tamari",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "sesame oil or olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "clove",
+          "ingredient": "garlic",
+          "comment": "minced"
+        }
       ],
       "instructions": [
         "Heat oil in a pan, sauté garlic.",
         "Add vegetables, cook until tender.",
         "Add cooked rice, soy sauce, and stir well.",
         "Serve hot, optionally with green onions on top."
-      ]
+      ],
+      "category_ids": [2, 4],
+      "category": "main"
     },
     {
+      "id": 15,
       "name": "Egg Muffin",
       "image": "img/egg-muffin.jpg",
-      "id": 15,
-      "time": "25 mins",
-      "servings": "2 Servings",
+      "time": { "value": 25, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
         "Calories": 120,
         "Fat": 8,
@@ -156,28 +351,55 @@
         "Protein": 10
       },
       "ingredients": [
-        "4 eggs",
-        "¼ cup chopped bell pepper",
-        "¼ cup spinach or kale",
-        "2 tbsp milk (optional)",
-        "Salt, pepper, herbs",
-        "Cheese (optional)"
+        { "amount": 4, "unit": "eggs", "ingredient": null, "comment": null },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "chopped bell pepper",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "spinach or kale",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "milk",
+          "comment": "optional"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt, pepper, herbs",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Cheese",
+          "comment": "optional"
+        }
       ],
       "instructions": [
         "Preheat oven to 180°C (350°F).",
-        "In a bowl, whisk eggs, milk, salt, pepper.",
+        "In a bowl, whisk eggs, milk, salt, and pepper.",
         "Stir in chopped veggies and cheese (if using).",
         "Pour into muffin tin (lightly greased).",
         "Bake for 18–20 mins until set.",
         "Cool slightly before serving or refrigerate for grab-and-go."
-      ]
+      ],
+      "category_ids": [2],
+      "category": "main"
     },
     {
+      "id": 16,
       "name": "Zucchini Noodles with Pesto",
       "image": "img/zucchini-noodles.jpg",
-      "id": 16,
-      "time": "15 mins",
-      "servings": "4 Servings",
+      "time": { "value": 15, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
       "nutrition_facts": {
         "Calories": 300,
         "Protein": 10,
@@ -185,26 +407,58 @@
         "Fat": 22
       },
       "ingredients": [
-        "2 medium zucchinis, spiralized",
-        "1/2 cup cherry tomatoes, halved",
-        "1/4 cup pesto (store-bought or homemade)",
-        "1 tbsp olive oil",
-        "2 tbsp grated Parmesan (optional)",
-        "Salt, pepper, lemon juice"
+        {
+          "amount": 2,
+          "unit": "medium",
+          "ingredient": "zucchinis",
+          "comment": "spiralized"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "cherry tomatoes",
+          "comment": "halved"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "pesto",
+          "comment": "store-bought or homemade"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "grated Parmesan",
+          "comment": "optional"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt, pepper, lemon juice",
+          "comment": null
+        }
       ],
       "instructions": [
         "Spiralize the zucchinis or use pre-spiralized ones.",
         "Heat olive oil in a pan, lightly sauté zucchini noodles for 2–3 mins.",
         "Remove from heat and toss with pesto, cherry tomatoes, salt, pepper, and lemon juice.",
         "Top with Parmesan and serve immediately."
-      ]
+      ],
+      "category_ids": [1, 2],
+      "category": "main"
     },
     {
+      "id": 17,
       "name": "Baked Salmon with Veggies",
       "image": "img/baked-salmon.jpg",
-      "id": 17,
-      "time": "30 mins",
-      "servings": "2 Servings",
+      "time": { "value": 30, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
         "Calories": 450,
         "Protein": 35,
@@ -212,12 +466,42 @@
         "Fat": 28
       },
       "ingredients": [
-        "2 salmon fillets",
-        "1 cup broccoli florets",
-        "1 cup carrots, sliced",
-        "1 tbsp olive oil",
-        "1/2 lemon, sliced",
-        "Salt, pepper, garlic powder, herbs (like dill or thyme)"
+        {
+          "amount": 2,
+          "unit": "fillets",
+          "ingredient": "salmon",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "broccoli florets",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "carrots",
+          "comment": "sliced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "lemon",
+          "ingredient": "sliced",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt, pepper, garlic powder, herbs",
+          "comment": "like dill or thyme"
+        }
       ],
       "instructions": [
         "Preheat oven to 200°C (400°F).",
@@ -225,14 +509,16 @@
         "Place salmon and veggies on the tray, drizzle with olive oil, and season.",
         "Add lemon slices on top of salmon.",
         "Bake for 20 mins or until salmon is flaky and veggies are tender."
-      ]
+      ],
+      "category_ids": [2],
+      "category": "main"
     },
     {
+      "id": 18,
       "name": "Stuffed Sweet Potato",
       "image": "img/stuffed-potato.jpg",
-      "id": 18,
-      "time": "40 mins",
-      "servings": "2 Servings",
+      "time": { "value": 40, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
         "Calories": 400,
         "Protein": 15,
@@ -240,14 +526,54 @@
         "Fat": 18
       },
       "ingredients": [
-        "2 medium sweet potatoes",
-        "1/2 cup canned black beans",
-        "1/2 avocado, sliced",
-        "1/4 cup Greek yogurt or sour cream",
-        "1/2 lime, juiced",
-        "1/4 tsp cumin",
-        "Salt, pepper, chili flakes",
-        "Fresh parsley or cilantro (optional)"
+        {
+          "amount": 2,
+          "unit": "medium",
+          "ingredient": "sweet potatoes",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "canned black beans",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "avocado",
+          "ingredient": "sliced",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "Greek yogurt",
+          "comment": "or sour cream"
+        },
+        {
+          "amount": 0.5,
+          "unit": "lime",
+          "ingredient": "juiced",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "ingredient": "cumin",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt, pepper, chili flakes",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh parsley or cilantro",
+          "comment": "optional"
+        }
       ],
       "instructions": [
         "Preheat oven to 200°C (400°F). Wash and poke holes in sweet potatoes.",
@@ -255,7 +581,9 @@
         "Mix black beans with cumin, salt, and lime juice.",
         "Slice sweet potatoes open and mash slightly.",
         "Fill with beans, avocado, yogurt, and herbs. Sprinkle chili flakes and serve hot."
-      ]
+      ],
+      "category_ids": [1, 2],
+      "category": "main"
     }
   ]
 }

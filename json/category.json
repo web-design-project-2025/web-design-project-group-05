@@ -1,0 +1,9 @@
+{
+  "category": [
+    { "category_ids": 1, "name": "Vegan" },
+    { "category_ids": 2, "name": "Vegetarian" },
+    { "category_ids": 3, "name": "Gluten-Free" },
+    { "category_ids": 4, "name": "Lactose-Free" },
+    { "category_ids": 5, "name": "Spicy" }
+  ]
+}

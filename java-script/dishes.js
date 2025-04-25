@@ -3,9 +3,13 @@ let recipes = [];
 async function loadData() {
   const recipeResponse = await fetch("json/recipe.json");
   const recipeJSON = await recipeResponse.json();
-  recipes = recipeJSON.recipes;
-  console.log(recipeJSON);
-  displayRecipes(recipes);
+  recipes = recipeJSON.recipe;
+
+  //filter from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter, accessed: 25.04.25
+  // Filter recipes by category
+  const mainRecipes = recipes.filter((recipe) => recipe.category === "main");
+
+  displayRecipes(mainRecipes);
 }
 
 function displayRecipes(recipes) {
@@ -39,7 +43,7 @@ function displayRecipes(recipes) {
 
     // Preparation time
     const prepContainer = document.createElement("p");
-    prepContainer.textContent = recipe.time;
+    prepContainer.innerText = `${recipe.time.value} ${recipe.time.unit}`;
     recipeInfo.appendChild(prepContainer);
 
     // Save button
