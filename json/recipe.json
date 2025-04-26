@@ -1,6 +1,457 @@
 {
   "recipe": [
     {
+      "id": 1,
+      "name": "Avocado Toast",
+      "image": "img/avocado-toast.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 220,
+        "Fat": 14,
+        "Carbs": 18,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "slices",
+          "ingredient": "whole grain bread",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "ripe avocado",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Chili flakes",
+          "comment": "optional"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Lemon juice",
+          "comment": "optional"
+        }
+      ],
+      "instructions": [
+        "Toast the bread slices.",
+        "Mash avocado and season with salt, pepper, and lemon juice.",
+        "Spread on toast and sprinkle chili flakes if desired."
+      ],
+      "category_ids": [1, 2],
+      "category": "breakfast"
+    },
+    {
+      "id": 2,
+      "name": "Breakfast Burrito",
+      "image": "img/breakfast-burrito.jpg",
+      "time": { "value": 20, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 350,
+        "Fat": 18,
+        "Carbs": 30,
+        "Protein": 16
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "flour tortillas",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "eggs",
+          "comment": "scrambled"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "black beans",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "shredded cheese",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": null,
+          "ingredient": "avocado",
+          "comment": "sliced"
+        },
+        { "amount": 2, "unit": "tbsp", "ingredient": "salsa", "comment": null },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        }
+      ],
+      "instructions": [
+        "Warm tortillas.",
+        "Scramble eggs and season.",
+        "Fill tortillas with eggs, beans, cheese, avocado, and salsa.",
+        "Roll into burritos and serve."
+      ],
+      "category_ids": [2],
+      "category": "breakfast"
+    },
+    {
+      "id": 3,
+      "name": "Chia Pudding",
+      "image": "img/chia-pudding.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 200,
+        "Fat": 10,
+        "Carbs": 20,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "chia seeds",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "almond milk",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "honey or maple syrup",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "vanilla extract",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh berries",
+          "comment": "for topping"
+        }
+      ],
+      "instructions": [
+        "Mix chia seeds, almond milk, sweetener, and vanilla.",
+        "Let sit for 5 minutes and stir.",
+        "Refrigerate at least 2 hours or overnight.",
+        "Top with berries before serving."
+      ],
+      "category_ids": [1, 3, 4],
+      "category": "breakfast"
+    },
+    {
+      "id": 4,
+      "name": "French Toast",
+      "image": "img/french-toast.jpg",
+      "time": { "value": 15, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 300,
+        "Fat": 12,
+        "Carbs": 32,
+        "Protein": 10
+      },
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "slices",
+          "ingredient": "bread",
+          "comment": null
+        },
+        { "amount": 2, "unit": null, "ingredient": "eggs", "comment": null },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "milk",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "cinnamon",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "vanilla extract",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Butter",
+          "comment": "for cooking"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Maple syrup",
+          "comment": "for serving"
+        }
+      ],
+      "instructions": [
+        "Whisk eggs, milk, cinnamon, and vanilla.",
+        "Dip bread slices and cook on buttered skillet.",
+        "Serve with maple syrup."
+      ],
+      "category_ids": [2],
+      "category": "breakfast"
+    },
+    {
+      "id": 5,
+      "name": "Greek Yogurt Parfait",
+      "image": "img/greek-yogurt-parfait.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 4,
+        "Carbs": 20,
+        "Protein": 12
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "Greek yogurt",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "granola",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "mixed berries",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "honey",
+          "comment": "optional"
+        }
+      ],
+      "instructions": [
+        "Layer yogurt, granola, and berries.",
+        "Drizzle honey if desired and serve."
+      ],
+      "category_ids": [2, 3],
+      "category": "breakfast"
+    },
+    {
+      "id": 6,
+      "name": "Oatmeal with Berries",
+      "image": "img/oatmeal-berries.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 230,
+        "Fat": 5,
+        "Carbs": 38,
+        "Protein": 7
+      },
+      "ingredients": [
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "rolled oats",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "water or milk",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "mixed berries",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "honey or maple syrup",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt",
+          "comment": "pinch"
+        }
+      ],
+      "instructions": [
+        "Cook oats with liquid and salt.",
+        "Top with berries and sweetener."
+      ],
+      "category_ids": [1, 2, 3],
+      "category": "breakfast"
+    },
+    {
+      "id": 7,
+      "name": "Pancake",
+      "image": "img/pancake.jpg",
+      "time": { "value": 20, "unit": "minutes" },
+      "servings": { "value": 3, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 290,
+        "Fat": 9,
+        "Carbs": 40,
+        "Protein": 8
+      },
+      "ingredients": [
+        { "amount": 1, "unit": "cup", "ingredient": "flour", "comment": null },
+        { "amount": 2, "unit": "tbsp", "ingredient": "sugar", "comment": null },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "baking powder",
+          "comment": null
+        },
+        { "amount": 1, "unit": null, "ingredient": "egg", "comment": null },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "ingredient": "milk",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "melted butter",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Maple syrup and butter",
+          "comment": "for serving"
+        }
+      ],
+      "instructions": [
+        "Mix dry and wet ingredients separately, then combine.",
+        "Cook batter in portions until bubbles form, flip.",
+        "Serve with syrup and butter."
+      ],
+      "category_ids": [2],
+      "category": "breakfast"
+    },
+    {
+      "id": 8,
+      "name": "Scrambled Eggs",
+      "image": "img/scrambled-eggs.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 14,
+        "Carbs": 2,
+        "Protein": 12
+      },
+      "ingredients": [
+        { "amount": 4, "unit": null, "ingredient": "eggs", "comment": null },
+        { "amount": 2, "unit": "tbsp", "ingredient": "milk", "comment": null },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        },
+        { "amount": 1, "unit": "tbsp", "ingredient": "butter", "comment": null }
+      ],
+      "instructions": [
+        "Whisk eggs with milk and seasoning.",
+        "Cook gently with butter until curds form.",
+        "Serve immediately."
+      ],
+      "category_ids": [2],
+      "category": "breakfast"
+    },
+    {
+      "id": 9,
+      "name": "Smoothie Bowl",
+      "image": "img/smoothie-bowl.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 250,
+        "Fat": 6,
+        "Carbs": 40,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "frozen banana",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "frozen berries",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "Greek yogurt",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "almond milk",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Granola and fruit",
+          "comment": "for topping"
+        }
+      ],
+      "instructions": [
+        "Blend banana, berries, yogurt, and milk.",
+        "Serve topped with granola and fruit."
+      ],
+      "category_ids": [2, 3],
+      "category": "breakfast"
+    },
+    {
       "id": 10,
       "name": "Indian Curry",
       "image": "img/indian-curry.jpg",
@@ -1070,6 +1521,553 @@
       ],
       "category_ids": [2],
       "category": "snacks"
+    },
+    {
+      "id": 38,
+      "name": "Tomato Basil Soup",
+      "image": "img/tomato-basil-soup.jpg",
+      "time": { "value": 45, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 7,
+        "Carbs": 24,
+        "Protein": 4
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "onion",
+          "comment": "chopped"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "garlic cloves",
+          "comment": "minced"
+        },
+        {
+          "amount": 4,
+          "unit": "cups",
+          "ingredient": "chopped tomatoes",
+          "comment": "fresh or canned"
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "vegetable broth",
+          "comment": null
+        },
+        { "amount": 1, "unit": "tsp", "ingredient": "sugar", "comment": null },
+        { "amount": 0.5, "unit": "tsp", "ingredient": "salt", "comment": null },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "ingredient": "pepper",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "fresh basil leaves",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "coconut milk or cream",
+          "comment": "optional"
+        }
+      ],
+      "instructions": [
+        "Heat oil in a pot. Sauté onions until translucent.",
+        "Add garlic and cook for 1 minute.",
+        "Add tomatoes, broth, sugar, salt, and pepper. Bring to a boil.",
+        "Reduce heat and simmer for 20–25 minutes.",
+        "Add basil and blend until smooth.",
+        "Stir in coconut milk if using and heat through before serving."
+      ],
+      "category_ids": [1, 2, 3, 4],
+      "category": "soup"
+    },
+    {
+      "id": 39,
+      "name": "Lentil Soup",
+      "image": "img/lentil-soup.jpg",
+      "time": { "value": 50, "unit": "minutes" },
+      "servings": { "value": 6, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 230,
+        "Fat": 5,
+        "Carbs": 34,
+        "Protein": 12
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "onion",
+          "comment": "diced"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "carrots",
+          "comment": "chopped"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "celery stalks",
+          "comment": "chopped"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "garlic cloves",
+          "comment": "minced"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "dried lentils",
+          "comment": "rinsed"
+        },
+        { "amount": 1, "unit": "tsp", "ingredient": "cumin", "comment": null },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "paprika",
+          "comment": null
+        },
+        {
+          "amount": 4,
+          "unit": "cups",
+          "ingredient": "vegetable broth",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "bay leaf",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "lemon",
+          "comment": "juice of ½"
+        }
+      ],
+      "instructions": [
+        "Heat oil in a pot. Sauté onion, carrots, and celery until softened.",
+        "Add garlic and cook for another minute.",
+        "Stir in lentils, cumin, paprika, and bay leaf.",
+        "Pour in broth and bring to a boil.",
+        "Reduce heat, cover, and simmer for 30–35 minutes, or until lentils are tender.",
+        "Remove bay leaf, stir in lemon juice, and adjust seasoning before serving."
+      ],
+      "category_ids": [1, 2, 3, 4],
+      "category": "soup"
+    },
+    {
+      "id": 40,
+      "name": "Creamy Mushroom Soup",
+      "image": "img/creamy-mushroom-soup.jpg",
+      "time": { "value": 40, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 210,
+        "Fat": 12,
+        "Carbs": 16,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "butter",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "onion",
+          "comment": "finely chopped"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "garlic cloves",
+          "comment": "minced"
+        },
+        {
+          "amount": 500,
+          "unit": "g",
+          "ingredient": "mushrooms",
+          "comment": "sliced"
+        },
+        { "amount": 1, "unit": "tsp", "ingredient": "thyme", "comment": null },
+        { "amount": 2, "unit": "tbsp", "ingredient": "flour", "comment": null },
+        {
+          "amount": 3,
+          "unit": "cups",
+          "ingredient": "vegetable broth",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "cream or coconut milk",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh parsley",
+          "comment": "for garnish"
+        }
+      ],
+      "instructions": [
+        "Melt butter in a pot. Add onion and cook until soft.",
+        "Add garlic and mushrooms. Cook until mushrooms release moisture and soften.",
+        "Stir in thyme and flour. Cook for 1–2 minutes.",
+        "Gradually add broth, stirring constantly.",
+        "Simmer for 15–20 minutes. Blend part of the soup for creaminess, if desired.",
+        "Stir in cream, season with salt and pepper, and garnish with parsley before serving."
+      ],
+      "category_ids": [2],
+      "category": "soup"
+    },
+    {
+      "id": 41,
+      "name": "Chocolate Lava Cake",
+      "image": "img-dessert/chocolate_lava_cake.jpg",
+      "time": { "value": 25, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 320,
+        "Fat": 18,
+        "Carbs": 35,
+        "Protein": 5
+      },
+      "ingredients": [
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "unsalted butter",
+          "comment": null
+        },
+        {
+          "amount": 4,
+          "unit": "oz",
+          "ingredient": "dark chocolate",
+          "comment": null
+        },
+        { "amount": 2, "unit": null, "ingredient": "eggs", "comment": null },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "egg yolks",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "sugar",
+          "comment": null
+        },
+        { "amount": 2, "unit": "tbsp", "ingredient": "flour", "comment": null },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "butter",
+          "comment": "for greasing"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 425°F (220°C). Grease ramekins with butter.",
+        "Melt butter and chocolate together, stir until smooth.",
+        "In a bowl, beat eggs, yolks, and sugar until thick.",
+        "Fold chocolate mixture into eggs, then sift in flour.",
+        "Divide into ramekins and bake for 12–14 mins.",
+        "Serve warm with ice cream if desired."
+      ],
+      "category_ids": [2],
+      "category": "dessert"
+    },
+    {
+      "id": 42,
+      "name": "Classic Cheesecake",
+      "image": "img-dessert/cheesecake.jpg",
+      "time": { "value": 90, "unit": "minutes" },
+      "servings": { "value": 8, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 450,
+        "Fat": 30,
+        "Carbs": 40,
+        "Protein": 7
+      },
+      "ingredients": [
+        {
+          "amount": 1.5,
+          "unit": "cups",
+          "ingredient": "graham cracker crumbs",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "melted butter",
+          "comment": null
+        },
+        { "amount": 2, "unit": "tbsp", "ingredient": "sugar", "comment": null },
+        {
+          "amount": 32,
+          "unit": "oz",
+          "ingredient": "cream cheese",
+          "comment": "softened"
+        },
+        { "amount": 1, "unit": "cup", "ingredient": "sugar", "comment": null },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "vanilla extract",
+          "comment": null
+        },
+        { "amount": 4, "unit": null, "ingredient": "eggs", "comment": null },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "sour cream",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 325°F (160°C).",
+        "Mix crumbs, butter, and sugar. Press into pan.",
+        "Beat cream cheese, sugar, and vanilla until smooth.",
+        "Add eggs one at a time, mixing well. Stir in sour cream.",
+        "Pour over crust and bake for 1 hour.",
+        "Cool, then chill at least 4 hours before serving."
+      ],
+      "category_ids": [2],
+      "category": "dessert"
+    },
+    {
+      "id": 43,
+      "name": "Strawberry Shortcake",
+      "image": "img-dessert/strawberry_shortcake.jpg",
+      "time": { "value": 30, "unit": "minutes" },
+      "servings": { "value": 6, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 280,
+        "Fat": 12,
+        "Carbs": 36,
+        "Protein": 4
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "strawberries",
+          "comment": "sliced"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "sugar",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "all-purpose flour",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "baking powder",
+          "comment": null
+        },
+        { "amount": 0.5, "unit": "tsp", "ingredient": "salt", "comment": null },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "butter",
+          "comment": null
+        },
+        {
+          "amount": 0.66,
+          "unit": "cup",
+          "ingredient": "milk",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "whipped cream",
+          "comment": "for topping"
+        }
+      ],
+      "instructions": [
+        "Toss strawberries with sugar; set aside.",
+        "Preheat oven to 425°F (220°C).",
+        "Mix flour, baking powder, and salt. Cut in butter.",
+        "Add milk and stir just until combined.",
+        "Drop spoonfuls onto baking sheet and bake 12–15 mins.",
+        "Split shortcakes, fill with strawberries and cream."
+      ],
+      "category_ids": [2],
+      "category": "dessert"
+    },
+    {
+      "id": 44,
+      "name": "Banana Pudding",
+      "image": "img-dessert/banana_pudding.jpg",
+      "time": { "value": 20, "unit": "minutes" },
+      "servings": { "value": 6, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 300,
+        "Fat": 10,
+        "Carbs": 45,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "package",
+          "ingredient": "instant vanilla pudding mix",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "cold milk",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "whipped topping",
+          "comment": null
+        },
+        {
+          "amount": 4,
+          "unit": null,
+          "ingredient": "bananas",
+          "comment": "sliced"
+        },
+        {
+          "amount": 1,
+          "unit": "box",
+          "ingredient": "vanilla wafers",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Whisk pudding mix with cold milk for 2 mins.",
+        "Fold in whipped topping.",
+        "Layer wafers, banana slices, and pudding in a dish.",
+        "Repeat layers and top with extra whipped topping.",
+        "Chill for at least 2 hours before serving."
+      ],
+      "category_ids": [2],
+      "category": "dessert"
+    },
+    {
+      "id": 45,
+      "name": "Tiramisu",
+      "image": "img-dessert/tiramisu.jpg",
+      "time": { "value": 30, "unit": "minutes" },
+      "servings": { "value": 8, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 410,
+        "Fat": 26,
+        "Carbs": 38,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 6,
+          "unit": null,
+          "ingredient": "egg yolks",
+          "comment": null
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "ingredient": "sugar",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "mascarpone cheese",
+          "comment": null
+        },
+        {
+          "amount": 1.5,
+          "unit": "cups",
+          "ingredient": "heavy cream",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "brewed espresso",
+          "comment": "cooled"
+        },
+        {
+          "amount": 1,
+          "unit": "package",
+          "ingredient": "ladyfingers",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "unsweetened cocoa powder",
+          "comment": "for dusting"
+        }
+      ],
+      "instructions": [
+        "Whisk egg yolks and sugar over a double boiler until thick and pale. Cool slightly.",
+        "Whisk in mascarpone until smooth.",
+        "In a separate bowl, whip heavy cream to stiff peaks and fold into the mascarpone mixture.",
+        "Dip ladyfingers briefly in espresso and layer in a dish.",
+        "Spread half of the cream mixture over ladyfingers. Repeat layers.",
+        "Cover and chill for at least 4 hours or overnight.",
+        "Dust with cocoa powder before serving."
+      ],
+      "category_ids": [2],
+      "category": "dessert"
     }
   ]
 }
