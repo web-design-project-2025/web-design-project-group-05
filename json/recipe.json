@@ -2068,6 +2068,279 @@
       ],
       "category_ids": [2],
       "category": "dessert"
+    },
+    {
+      "id": 46,
+      "name": "Philadelphia Sushi Roll",
+      "image": "img-appetizers/philadelphia-sushi.jpg",
+      "time": { "value": 15, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 280,
+        "Fat": 15,
+        "Carbs": 30,
+        "Protein": 5
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "sushi rice",
+          "comment": "cooked and seasoned"
+        },
+        { "amount": 1, "unit": null, "ingredient": "nori", "comment": "sheet" },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "cream cheese",
+          "comment": "softened"
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "cucumber",
+          "comment": "sliced into thin strips"
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "avocado",
+          "comment": "sliced"
+        }
+      ],
+      "instructions": [
+        "Place a bamboo sushi mat on a flat surface.",
+        "Lay a sheet of nori on the mat, then spread the sushi rice evenly over it.",
+        "Layer cucumber, cream cheese, and avocado on top of the rice.",
+        "Roll the sushi tightly using the bamboo mat, then slice into pieces.",
+        "Serve immediately."
+      ],
+      "category_ids": [1],
+      "category": "appetizers"
+    },
+    {
+      "id": 47,
+      "name": "Melon and Prosciutto Bites",
+      "image": "img-appetizers/melon-prosciutto.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 150,
+        "Fat": 8,
+        "Carbs": 18,
+        "Protein": 5
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "melon",
+          "comment": "cut into cubes"
+        },
+        {
+          "amount": 8,
+          "unit": null,
+          "ingredient": "prosciutto",
+          "comment": "thinly sliced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "balsamic glaze",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Wrap each melon cube with a slice of prosciutto.",
+        "Drizzle with balsamic glaze and serve immediately."
+      ],
+      "category_ids": [2],
+      "category": "appetizers"
+    },
+    {
+      "id": 48,
+      "name": "Salmon Cucumber Roll",
+      "image": "img-appetizers/salmon-cucumber.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 180,
+        "Fat": 10,
+        "Carbs": 6,
+        "Protein": 15
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "cucumber",
+          "comment": "sliced into rounds"
+        },
+        {
+          "amount": 100,
+          "unit": "g",
+          "ingredient": "smoked salmon",
+          "comment": "sliced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "cream cheese",
+          "comment": "optional"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "fresh dill",
+          "comment": "chopped"
+        }
+      ],
+      "instructions": [
+        "Top each cucumber slice with a piece of smoked salmon.",
+        "Add a dollop of cream cheese (optional) and sprinkle with fresh dill.",
+        "Serve immediately."
+      ],
+      "category_ids": [1],
+      "category": "appetizers"
+    },
+    {
+      "id": 49,
+      "name": "Bruschetta with Tomato and Mozzarella",
+      "image": "img-appetizers/bruschetta.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 200,
+        "Fat": 10,
+        "Carbs": 20,
+        "Protein": 7
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "baguette",
+          "comment": "sliced into rounds"
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "tomatoes",
+          "comment": "diced"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "mozzarella cheese",
+          "comment": "cubed"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "basil",
+          "comment": "fresh, chopped"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "balsamic vinegar",
+          "comment": "optional"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "salt",
+          "comment": "to taste"
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "black pepper",
+          "comment": "to taste"
+        }
+      ],
+      "instructions": [
+        "Toast the baguette slices until golden brown.",
+        "Top each slice with diced tomatoes, mozzarella, and chopped basil.",
+        "Drizzle with olive oil and balsamic vinegar, if using.",
+        "Sprinkle with salt and black pepper to taste.",
+        "Serve immediately."
+      ],
+      "category_ids": [2],
+      "category": "appetizers"
+    },
+    {
+      "id": 50,
+      "name": "Gourmet Brie with Sourdough and Cranberry Syrup",
+      "image": "img-appetizers/gourmet-brie-sourdough.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 300,
+        "Fat": 20,
+        "Carbs": 20,
+        "Protein": 10
+      },
+      "ingredients": [
+        {
+          "amount": 200,
+          "unit": "g",
+          "ingredient": "Gourmet Brie",
+          "comment": "sliced"
+        },
+        {
+          "amount": 4,
+          "unit": "slices",
+          "ingredient": "sourdough bread",
+          "comment": "toasted"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "ingredient": "cranberry syrup or sauce",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "fresh thyme",
+          "comment": "optional, for garnish"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "olive oil",
+          "comment": "for drizzling"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "salt",
+          "comment": "to taste"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "black pepper",
+          "comment": "to taste"
+        }
+      ],
+      "instructions": [
+        "Lightly toast the sourdough slices in a pan with a drizzle of olive oil until golden and crispy.",
+        "Place the Brie slices on a serving plate.",
+        "Arrange the toasted sourdough slices around the Brie.",
+        "Spoon cranberry syrup or sauce over the Brie.",
+        "Optionally, garnish with fresh thyme and season with a pinch of salt and black pepper.",
+        "Serve immediately."
+      ],
+      "category_ids": [1],
+      "category": "appetizers"
     }
   ]
 }
