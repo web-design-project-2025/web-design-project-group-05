@@ -1525,7 +1525,7 @@
     {
       "id": 38,
       "name": "Tomato Basil Soup",
-      "image": "img/tomato-basil-soup.jpg",
+      "image": "img-soup/tomato-soup.jpg",
       "time": { "value": 45, "unit": "minutes" },
       "servings": { "value": 4, "unit": "servings" },
       "nutrition_facts": {
@@ -1600,7 +1600,7 @@
     {
       "id": 39,
       "name": "Lentil Soup",
-      "image": "img/lentil-soup.jpg",
+      "image": "img-soup/lentil_soup.jpg",
       "time": { "value": 50, "unit": "minutes" },
       "servings": { "value": 6, "unit": "servings" },
       "nutrition_facts": {
@@ -1692,7 +1692,7 @@
     {
       "id": 40,
       "name": "Creamy Mushroom Soup",
-      "image": "img/creamy-mushroom-soup.jpg",
+      "image": "img-soup/mushroom-soup.jpg",
       "time": { "value": 40, "unit": "minutes" },
       "servings": { "value": 4, "unit": "servings" },
       "nutrition_facts": {
