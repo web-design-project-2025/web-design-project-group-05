@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Avocado Toast",
-      "image": "img/avocado-toast.jpg",
+      "image": "img-breakfast/avocado_toast_2.jpg",
       "time": { "value": 10, "unit": "minutes" },
       "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
@@ -55,7 +55,7 @@
     {
       "id": 2,
       "name": "Breakfast Burrito",
-      "image": "img/breakfast-burrito.jpg",
+      "image": "img-breakfast/burito_8.jpg",
       "time": { "value": 20, "unit": "minutes" },
       "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
@@ -115,7 +115,7 @@
     {
       "id": 3,
       "name": "Chia Pudding",
-      "image": "img/chia-pudding.jpg",
+      "image": "img-breakfast/chia_pudding_9.jpg",
       "time": { "value": 5, "unit": "minutes" },
       "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
@@ -168,7 +168,7 @@
     {
       "id": 4,
       "name": "French Toast",
-      "image": "img/french-toast.jpg",
+      "image": "img-breakfast/french_toast_6.jpg",
       "time": { "value": 15, "unit": "minutes" },
       "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
@@ -227,7 +227,7 @@
     {
       "id": 5,
       "name": "Greek Yogurt Parfait",
-      "image": "img/greek-yogurt-parfait.jpg",
+      "image": "img-breakfast/yogurt_parfait_7.jpg",
       "time": { "value": 5, "unit": "minutes" },
       "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
@@ -272,7 +272,7 @@
     {
       "id": 6,
       "name": "Oatmeal with Berries",
-      "image": "img/oatmeal-berries.jpg",
+      "image": "img-breakfast/oatmeal_3.jpg",
       "time": { "value": 10, "unit": "minutes" },
       "servings": { "value": 1, "unit": "serving" },
       "nutrition_facts": {
@@ -323,7 +323,7 @@
     {
       "id": 7,
       "name": "Pancake",
-      "image": "img/pancake.jpg",
+      "image": "img-breakfast/pancakes_1.jpg",
       "time": { "value": 20, "unit": "minutes" },
       "servings": { "value": 3, "unit": "servings" },
       "nutrition_facts": {
@@ -372,7 +372,7 @@
     {
       "id": 8,
       "name": "Scrambled Eggs",
-      "image": "img/scrambled-eggs.jpg",
+      "image": "img-breakfast/scrambled_eggs_4.jpg",
       "time": { "value": 10, "unit": "minutes" },
       "servings": { "value": 2, "unit": "servings" },
       "nutrition_facts": {
@@ -403,7 +403,7 @@
     {
       "id": 9,
       "name": "Smoothie Bowl",
-      "image": "img/smoothie-bowl.jpg",
+      "image": "img-breakfast/smoothie_5.jpg",
       "time": { "value": 10, "unit": "minutes" },
       "servings": { "value": 1, "unit": "serving" },
       "nutrition_facts": {
