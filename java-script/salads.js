@@ -7,10 +7,10 @@ async function loadData() {
 
   //filter from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter, accessed: 25.04.25
   // Filter recipes by category
-  const snacksRecipes = recipes.filter((recipe) => recipe.category === "snacks");
+  const saladsRecipes = recipes.filter((recipe) => recipe.category === "salads");
 
-  displayRecipes(snacksRecipes);
-} 
+  displayRecipes(saladsRecipes);
+}
 
 function displayRecipes(recipes) {
   const recipeListContainer = document.getElementById("recipe-list");

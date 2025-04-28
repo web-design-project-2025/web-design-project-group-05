@@ -1523,6 +1523,493 @@
       "category": "snacks"
     },
     {
+      "id": 29,
+      "name": "Minty Cucumber Cooler",
+      "image": "img-beverages/minty-cooler.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 45,
+        "Fat": 0,
+        "Carbs": 11,
+        "Protein": 1
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "cucumber",
+          "comment": "peeled and chopped"
+        },
+        {
+          "amount": 10,
+          "unit": "leaves",
+          "ingredient": "mint",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "lemon juice",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "honey",
+          "comment": "optional"
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "cold water",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Blend cucumber, mint, lemon juice, and honey with 1 cup of water.",
+        "Strain if desired.",
+        "Add the remaining water and mix well.",
+        "Serve over ice."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 30,
+      "name": "Golden Turmeric Latte",
+      "image": "img-beverages/golden-latte.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 90,
+        "Fat": 4,
+        "Carbs": 8,
+        "Protein": 4
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "unsweetened almond milk",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "tsp",
+          "ingredient": "turmeric powder",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "tsp",
+          "ingredient": "cinnamon",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "black pepper",
+          "comment": "pinch"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "maple syrup or honey",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Warm the almond milk in a saucepan.",
+        "Add turmeric, cinnamon, and pepper.",
+        "Whisk until well combined and frothy.",
+        "Stir in sweetener and serve warm."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 31,
+      "name": "Berry Protein Smoothie",
+      "image": "img-beverages/berry-smoothie.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 220,
+        "Fat": 5,
+        "Carbs": 25,
+        "Protein": 18
+      },
+      "ingredients": [
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "frozen mixed berries",
+          "comment": null
+        },
+        { "amount": 1, "unit": null, "ingredient": "banana", "comment": null },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "Greek yogurt",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "scoop",
+          "ingredient": "vanilla protein powder",
+          "comment": null
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "water or milk of choice",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Blend all ingredients until smooth.",
+        "Serve immediately."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 32,
+      "name": "Choco-Oat Energy Shake",
+      "image": "img-beverages/choco-shake.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 300,
+        "Fat": 8,
+        "Carbs": 38,
+        "Protein": 15
+      },
+      "ingredients": [
+        { "amount": 1, "unit": null, "ingredient": "banana", "comment": null },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "peanut butter",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "cocoa powder",
+          "comment": null
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "oats",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "oat milk",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Blend all ingredients until creamy.",
+        "Pour into a glass and enjoy chilled."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 33,
+      "name": "Citrus Ginger Sparkle",
+      "image": "img-beverages/citrus-sparkle.jpg",
+      "time": { "value": 7, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 60,
+        "Fat": 0,
+        "Carbs": 15,
+        "Protein": 0
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "orange",
+          "comment": "juiced"
+        },
+        {
+          "amount": 0.5,
+          "unit": null,
+          "ingredient": "lemon",
+          "comment": "juiced"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "grated ginger",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "honey or agave syrup",
+          "comment": null
+        },
+        {
+          "amount": 1.5,
+          "unit": "cups",
+          "ingredient": "sparkling water",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Mix orange juice, lemon juice, ginger, and sweetener.",
+        "Strain and pour into glasses.",
+        "Top with sparkling water and ice.",
+        "Stir gently and serve."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 34,
+      "name": "Matcha Coconut Iced Latte",
+      "image": "img-beverages/matcha-latte.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 110,
+        "Fat": 6,
+        "Carbs": 10,
+        "Protein": 2
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "matcha powder",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "hot water",
+          "comment": null
+        },
+        {
+          "amount": 0.75,
+          "unit": "cup",
+          "ingredient": "coconut milk",
+          "comment": "light or full fat"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "honey or maple syrup",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Whisk matcha with hot water until smooth.",
+        "Add coconut milk and sweetener.",
+        "Shake or stir well.",
+        "Pour over ice and enjoy."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 35,
+      "name": "Peach Basil Iced Tea",
+      "image": "img-beverages/peach-tea.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 50,
+        "Fat": 0,
+        "Carbs": 13,
+        "Protein": 0
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "water",
+          "comment": "boiling"
+        },
+        {
+          "amount": 2,
+          "unit": "bags",
+          "ingredient": "black tea",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "peaches",
+          "comment": "sliced"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "honey",
+          "comment": "or sweetener of choice"
+        },
+        {
+          "amount": 6,
+          "unit": "leaves",
+          "ingredient": "basil",
+          "comment": "fresh"
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "cold water",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Steep tea bags in boiling water for 5 minutes.",
+        "Remove tea bags and stir in honey.",
+        "Muddle peach slices and basil in a pitcher.",
+        "Pour in brewed tea and cold water.",
+        "Serve over ice."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 36,
+      "name": "Pineapple Mint Detox Water",
+      "image": "img-beverages/pineapple-water.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 20,
+        "Fat": 0,
+        "Carbs": 5,
+        "Protein": 0
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "pineapple chunks",
+          "comment": "fresh"
+        },
+        {
+          "amount": 10,
+          "unit": "leaves",
+          "ingredient": "mint",
+          "comment": "fresh"
+        },
+        {
+          "amount": 4,
+          "unit": "cups",
+          "ingredient": "water",
+          "comment": "cold"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Add pineapple chunks and mint leaves into a large pitcher.",
+        "Pour in cold water.",
+        "Let it infuse for at least 1 hour in the refrigerator.",
+        "Serve over ice."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
+      "id": 37,
+      "name": "Almond Date Smoothie",
+      "image": "img-beverages/almond-smoothie.jpg",
+      "time": { "value": 5, "unit": "minutes" },
+      "servings": { "value": 1, "unit": "serving" },
+      "nutrition_facts": {
+        "Calories": 280,
+        "Fat": 10,
+        "Carbs": 38,
+        "Protein": 8
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "almond milk",
+          "comment": "unsweetened"
+        },
+        {
+          "amount": 4,
+          "unit": null,
+          "ingredient": "dates",
+          "comment": "pitted"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "almond butter",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "banana",
+          "comment": "small"
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "ice cubes",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Blend almond milk, dates, almond butter, and banana until smooth.",
+        "Add ice cubes and blend again until frothy.",
+        "Serve immediately."
+      ],
+      "category_ids": [4],
+      "category": "beverages"
+    },
+    {
       "id": 38,
       "name": "Tomato Basil Soup",
       "image": "img-soup/tomato-soup.jpg",
@@ -2341,6 +2828,380 @@
       ],
       "category_ids": [1],
       "category": "appetizers"
+    },
+    {
+      "id": 51,
+      "name": "Mediterranean Chickpea Salad",
+      "image": "img-salads/chickpea-salad.jpg",
+      "time": { "value": 15, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 210,
+        "Fat": 7,
+        "Carbs": 28,
+        "Protein": 9
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "can (400g)",
+          "ingredient": "chickpeas",
+          "comment": "drained and rinsed"
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "cucumber",
+          "comment": "diced"
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "red bell pepper",
+          "comment": "diced"
+        },
+        {
+          "amount": 0.25,
+          "unit": null,
+          "ingredient": "red onion",
+          "comment": "finely chopped"
+        },
+        {
+          "amount": 10,
+          "unit": null,
+          "ingredient": "cherry tomatoes",
+          "comment": "halved"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "feta cheese",
+          "comment": "crumbled"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "lemon juice",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        },
+        { "amount": 1, "unit": "tsp", "ingredient": "oregano", "comment": null }
+      ],
+      "instructions": [
+        "In a large bowl, combine chickpeas, cucumber, pepper, onion, and tomatoes.",
+        "Drizzle with olive oil and lemon juice.",
+        "Season with salt, pepper, and oregano.",
+        "Toss gently and sprinkle with feta before serving."
+      ],
+      "category_ids": [1],
+      "category": "salads"
+    },
+    {
+      "id": 52,
+      "name": "Quinoa Avocado Salad",
+      "image": "img-salads/quinoa-salad.jpg",
+      "time": { "value": 20, "unit": "minutes" },
+      "servings": { "value": 3, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 280,
+        "Fat": 13,
+        "Carbs": 32,
+        "Protein": 8
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "cooked quinoa",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "ripe avocado",
+          "ingredient": null,
+          "comment": "diced"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "corn",
+          "comment": "fresh or frozen"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "black beans",
+          "comment": "rinsed"
+        },
+        {
+          "amount": 0.25,
+          "unit": "cup",
+          "ingredient": "chopped cilantro",
+          "comment": null
+        },
+        { "amount": 1, "unit": "lime", "ingredient": "juice", "comment": null },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt",
+          "comment": "to taste"
+        }
+      ],
+      "instructions": [
+        "Cook quinoa and let it cool.",
+        "Mix quinoa, avocado, corn, black beans, and cilantro in a bowl.",
+        "Add lime juice, olive oil, and salt.",
+        "Stir gently and serve chilled or at room temperature."
+      ],
+      "category_ids": [5],
+      "category": "salads"
+    },
+    {
+      "id": 53,
+      "name": "Strawberry Spinach Salad",
+      "image": "img-salads/strawberry-salad.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 150,
+        "Fat": 7,
+        "Carbs": 18,
+        "Protein": 3
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "fresh spinach",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "strawberries",
+          "comment": "sliced"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "walnuts",
+          "comment": "chopped"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "feta cheese",
+          "comment": "optional"
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "balsamic glaze",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Place spinach in a large bowl.",
+        "Top with strawberries, walnuts, and feta.",
+        "Drizzle with balsamic glaze.",
+        "Toss lightly before serving."
+      ],
+      "category_ids": [5],
+      "category": "salads"
+    },
+    {
+      "id": 54,
+      "name": "Asian Cabbage Slaw",
+      "image": "img-salads/asian-slaw.jpg",
+      "time": { "value": 15, "unit": "minutes" },
+      "servings": { "value": 4, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 120,
+        "Fat": 6,
+        "Carbs": 14,
+        "Protein": 2
+      },
+      "ingredients": [
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "shredded green cabbage",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "shredded purple cabbage",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": null,
+          "ingredient": "carrot",
+          "comment": "julienned"
+        },
+        {
+          "amount": 2,
+          "unit": null,
+          "ingredient": "green onions",
+          "comment": "sliced"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "rice vinegar",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "sesame oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "soy sauce",
+          "comment": null
+        },
+        { "amount": 1, "unit": "tsp", "ingredient": "honey", "comment": null },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "ingredient": "sesame seeds",
+          "comment": null
+        }
+      ],
+      "instructions": [
+        "Combine cabbages, carrot, and green onions in a large bowl.",
+        "In a small bowl, whisk together vinegar, sesame oil, soy sauce, and honey.",
+        "Pour dressing over the salad and toss well.",
+        "Sprinkle with sesame seeds before serving."
+      ],
+      "category_ids": [5],
+      "category": "salads"
+    },
+    {
+      "id": 55,
+      "name": "Sweet Potato & Kale Salad",
+      "image": "img-salads/kale-salad.jpg",
+      "time": { "value": 30, "unit": "minutes" },
+      "servings": { "value": 3, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 240,
+        "Fat": 8,
+        "Carbs": 35,
+        "Protein": 6
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "medium",
+          "ingredient": "sweet potato",
+          "comment": "cubed"
+        },
+        {
+          "amount": 2,
+          "unit": "cups",
+          "ingredient": "chopped kale",
+          "comment": "stems removed"
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "olive oil",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "apple cider vinegar",
+          "comment": null
+        },
+        {
+          "amount": 1,
+          "unit": "tbsp",
+          "ingredient": "maple syrup",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Salt and pepper",
+          "comment": "to taste"
+        }
+      ],
+      "instructions": [
+        "Roast sweet potato cubes with 1 tbsp olive oil at 200°C (400°F) for 20 minutes.",
+        "Massage kale with a pinch of salt and remaining olive oil.",
+        "Mix apple cider vinegar and maple syrup for dressing.",
+        "Toss roasted sweet potatoes with kale and drizzle with dressing."
+      ],
+      "category_ids": [5],
+      "category": "salads"
+    },
+    {
+      "id": 56,
+      "name": "Caprese Pesto Salad",
+      "image": "img-salads/caprese-salad.jpg",
+      "time": { "value": 10, "unit": "minutes" },
+      "servings": { "value": 2, "unit": "servings" },
+      "nutrition_facts": {
+        "Calories": 220,
+        "Fat": 17,
+        "Carbs": 8,
+        "Protein": 9
+      },
+      "ingredients": [
+        {
+          "amount": 1,
+          "unit": "cup",
+          "ingredient": "cherry tomatoes",
+          "comment": "halved"
+        },
+        {
+          "amount": 0.5,
+          "unit": "cup",
+          "ingredient": "mozzarella balls (bocconcini)",
+          "comment": null
+        },
+        {
+          "amount": 2,
+          "unit": "tbsp",
+          "ingredient": "basil pesto",
+          "comment": null
+        },
+        {
+          "amount": null,
+          "unit": null,
+          "ingredient": "Fresh basil leaves",
+          "comment": "for garnish"
+        }
+      ],
+      "instructions": [
+        "Combine cherry tomatoes and mozzarella in a bowl.",
+        "Add pesto and mix until everything is coated.",
+        "Garnish with fresh basil and serve immediately."
+      ],
+      "category_ids": [5],
+      "category": "salads"
     }
   ]
 }
