@@ -106,11 +106,11 @@
 /* Section 3 - Quote with background */
 .section-3 {
   grid-column: span 3;
-  background-color: #fdf5e6; /* light warm beige, adjust as needed */
+  background-color: var(--beige);
   padding: 2rem;
   margin-top: 2rem;
   border-radius: 4px;
-  border-left: 5px solid var(--secondary-color); /* adds a stylish quote line */
+  border-left: 5px solid var(--secondary-color);
 }
 
 .text-quote {
@@ -152,34 +152,27 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+  margin-bottom: 2rem; /* space between text and images */
+}
+
+.recipe-text {
+  font-family: var(--primary-font);
   text-align: left;
-}
-
-.recipe-text {
-  position: relative;
-  padding-left: 1.5rem;
-  font-family: var(--primary-font);
-}
-
-.recipe-text {
-  position: relative;
-  padding-left: 1.5rem;
-  font-family: var(--primary-font);
 }
 
 .recipe-text h3 {
   font-weight: 700;
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--text-black);
 }
 
 .recipe-text p {
   font-size: 1rem;
-  color: var(--text-black);
   text-align: justify;
   line-height: 1.5;
-  margin-top: 0rem;
+  color: var(--text-black);
+  margin-bottom: 0;
 }
 
 .recipe-text .dropcap {
@@ -188,5 +181,39 @@
   padding-right: 0.4rem;
   font-weight: bold;
   color: var(--secondary-color);
+}
+
+/* Recipe Images */
+
+.recipe-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.recipe-images figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.recipe-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recipe-images figcaption {
+  margin-top: 1rem;
   font-family: var(--primary-font);
+  font-size: 1rem;
+  color: var(--text-black);
+  font-style: italic;
+  align-self: flex-start;
+}
+
+.recipe-images a {
+  text-decoration: none;
 }
