@@ -28,6 +28,33 @@ async function loadData() {
   }
 }
 
+//help from: https://chatgpt.com/c/680f38e7-7d10-8010-92f8-8a2025786ccf, accessed: 28.04.25
+//Save ingredients in local storage
+const buttonElement = document.getElementById("button-list");
+
+buttonElement.addEventListener("click", () => {
+  const params = new URLSearchParams(window.location.search);
+  const recipeId = parseInt(params.get("id"));
+  const selectedRecipe = recipes.find((recipe) => recipe.id === recipeId);
+
+  if (selectedRecipe) {
+    //Use one key per recipe
+    const storageKey = `recipeIngredients_${recipeId}`;
+    const simplifiedIngredients = selectedRecipe.ingredients.map(
+      (ingredient) => ({
+        amount: ingredient.amount,
+        unit: ingredient.unit,
+        ingredient: ingredient.ingredient,
+      })
+    );
+    localStorage.setItem(storageKey, JSON.stringify(simplifiedIngredients));
+
+    window.location.href = "shopping-list.html";
+  } else {
+    console.error("Recipe not found");
+  }
+});
+
 function displayRecipe(recipe) {
   // Image
   const imageContainer = document.getElementById("image");

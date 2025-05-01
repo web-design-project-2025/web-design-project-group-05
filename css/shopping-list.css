@@ -1,0 +1,53 @@
+/*Long background image*/
+#background-image {
+  margin: 0;
+}
+
+#background-image-img {
+  width: 100%;
+}
+
+/*Header Shopping list*/
+.categories-heading {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  margin: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+.add-container {
+  position: relative;
+  display: inline-block; /*keeps container tight to input size */
+}
+
+#name-search {
+  width: 100%;
+  padding: 0.5rem 2.5rem 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.ingredient-card {
+  display: flex;
+  align-items: center;
+  background-color: #f2f1df;
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 2.5px;
+}
+
+.checkbox-ingredient {
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ingredient-card div {
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
