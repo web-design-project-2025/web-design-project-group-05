@@ -1,56 +1,80 @@
+/* General Styling */
+body {
+  font-family: var(--primary-font);
+  color: var(--text-black);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  color: var(--text-black);
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
 /* Headings */
 #article-heading {
-  font-family: var(--primary-font);
   font-weight: 800;
   font-size: 2.1rem;
-  color: var(--text-black);
   text-align: center;
   margin: 3rem 0 1.5rem;
 }
 
 #article-subheading {
-  font-family: var(--primary-font);
   font-weight: 400;
   font-size: 1rem;
   color: var(--secondary-color);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-/*Main image */
+/* Image */
 .img-container {
   display: flex;
   justify-content: center;
-  padding: 0 2rem 2rem 2rem;
+  padding: 0 3.7rem 1.4rem;
 }
 
 #main-img {
   width: 100%;
-  max-width: 1400px;
-  height: auto;
-  display: block;
+  max-width: 1290px;
   border-radius: 4px;
 }
 
-/* Content */
+/* Grid Layout */
 .page-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 4.5rem 1.5rem;
+  padding: 0 3.7rem;
+  gap: 2.5rem;
+  box-sizing: border-box;
+  margin-bottom: 0;
 }
 
-/* Introduction paragraph */
+/* Introduction Section */
 .intro {
-  grid-column: span 3; /* Make intro span across 3 columns */
+  grid-column: span 3;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  padding-left: 3.7rem;
+  padding-right: 3.7rem;
 }
 
 .intro p {
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--text-black);
-  text-align: justify;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .dropcap {
@@ -63,116 +87,101 @@
   height: 2rem; /* Helps prevent vertical misalignment */
 }
 
-/* Section 2 */
+/* Section 2 - Text and Image */
 .section-2 {
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 1fr;
-  gap: 3.5rem;
-  align-items: start;
-  width: 85vw; /* Full viewport width */
-  box-sizing: border-box; /* Prevent padding from breaking layout */
-  border-radius: 4px;
+  grid-column: span 3;
+  padding: 0rem 3.7rem;
 }
 
 .section-heading {
-  grid-column: span 2;
-  font-family: var(--primary-font);
   font-weight: 900;
-  font-size: 1.7rem;
-  color: var(--text-black);
-  text-align: start;
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
+}
+
+.section-2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
 }
 
 .text-2 {
-  font-family: var(--primary-font);
-  font-weight: 400;
-  font-size: 1rem;
-  color: var(--text-black);
-  text-align: justify;
-  line-height: 1.5;
-  grid-column: span 2;
+  grid-column: 1 / 2;
+  align-self: start;
+}
+
+.image-2 {
+  grid-column: 2 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .image-2 img {
-  width: 115%;
+  width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 4px;
-  place-self: start;
-  padding: 5.2rem 0 0 0;
+  margin-top: 1.3rem;
 }
 
-/* Section 3 - Quote with background */
+/* Section 3 - Quote */
 .section-3 {
   grid-column: span 3;
   background-color: var(--beige);
   padding: 2rem;
-  margin-top: 2rem;
   border-radius: 4px;
   border-left: 5px solid var(--secondary-color);
-}
-
-.text-quote {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Quote box */
 .quote-box {
-  font-family: var(--primary-font);
   font-style: italic;
   font-weight: 500;
   font-size: 1.2rem;
-  color: var(--text-black);
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
-/* Recipe Recommendations Section */
-
+/* Section 4 - Recipe Recommendations */
 .recipe-recommendation-section {
   grid-column: span 3;
   padding: 2rem 3.7rem;
+  margin-top: -0.5rem;
 }
 
-.recipe-recommendation-section h2 {
-  font-family: var(--primary-font);
+.recipes-heading {
   font-weight: 900;
-  font-size: 1.7rem;
-  color: var(--text-black);
-  text-align: start;
-  margin-top: 1.5rem;
-  margin-bottom: 2.8rem;
-  margin-left: -3.7rem; /* Shift the heading to the left */
+  font-size: 1.5rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  margin-left: 0rem;
 }
 
 .recipe-text-columns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  margin-bottom: 2rem; /* space between text and images */
-}
-
-.recipe-text {
-  font-family: var(--primary-font);
-  text-align: left;
+  margin-bottom: 3rem;
 }
 
 .recipe-text h3 {
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: var(--text-black);
 }
 
 .recipe-text p {
-  font-size: 1rem;
-  text-align: justify;
-  line-height: 1.5;
-  color: var(--text-black);
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
 .recipe-text .dropcap {
@@ -184,7 +193,6 @@
 }
 
 /* Recipe Images */
-
 .recipe-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -200,20 +208,134 @@
 
 .recipe-images img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   object-fit: cover;
 }
 
 .recipe-images figcaption {
   margin-top: 1rem;
-  font-family: var(--primary-font);
-  font-size: 1rem;
-  color: var(--text-black);
   font-style: italic;
   align-self: flex-start;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .page-grid,
+  .section-2-grid,
+  .recipe-text-columns,
+  .recipe-images {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading,
+  .recipe-recommendation-section h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .image-2 {
+    margin-top: 2rem;
+  }
+
+  .img-container {
+    padding: 0 2rem;
+  }
+}
+
+/* Recipe Recommendations Section */
+.recipe-recommendation-section {
+  padding: 2rem 3.7rem;
+  margin-bottom: 3rem;
+}
+
+.recipe-recommendation-section h2 {
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Recipe Text Columns */
+.recipe-text-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.recipe-text {
+  font-size: 1rem;
+}
+
+.recipe-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Recipe Images Grid */
+.recipe-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.recipe-images figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.recipe-images img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.recipe-images figcaption {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .recipe-images a {
   text-decoration: none;
+  color: var(--text-black);
+}
+
+/* Set consistent bottom margin for all sections */
+.intro,
+.section-2,
+.section-3,
+.recipe-recommendation-section,
+.recipe-text-columns {
+  margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .recipe-text-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-2-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .text-2 {
+    grid-column: 1 / -1;
+  }
+
+  .image-2 {
+    grid-column: 1 / -1;
+    margin-top: 1.5rem;
+  }
 }
