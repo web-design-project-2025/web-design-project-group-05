@@ -64,7 +64,7 @@ li {
 
 body {
   margin: 0;
- }
+}
 
 /* Adjust font size on smaller screens */
 @media (max-width: 1000px) {
@@ -97,6 +97,11 @@ footer {
   column-gap: 10rem;
 }
 
+.footer a {
+  text-decoration: none;
+  color: var(--text-white);
+}
+
 @media (max-width: 820px) {
   .footer {
     grid-template-columns: 1fr 1fr;
@@ -117,5 +122,5 @@ li {
 
 .footer-header a {
   text-decoration: none;
-  color:var(--text-white);
+  color: var(--text-white);
 }
