@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/main-dishes.css" />
     <script src="java-script/beverages.js" defer></script>
+    <script src="java-script/filters.js"></script>
     <title>Beverages</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,25 +46,25 @@
         <h2 id="headline-long-image">BEVERAGES</h2>
       </figure>
 
-      <div class="filter-bar">
-        <div class="filters-group">
-          <label><input type="checkbox" /> Vegetarian</label>
-          <label><input type="checkbox" /> Vegan</label>
-          <label><input type="checkbox" /> Gluten-free</label>
-          <label><input type="checkbox" /> Lactose-free</label>
-          <label><input type="checkbox" /> Spicy</label>
-        </div>
-
+      <div class="top-bar">
+        <img src="img/filters.png" alt="Show Filters" id="toggleFilters" style="cursor: pointer; width: 30px;" />
+        
         <div class="search-container">
-          <input
-            type="text"
-            id="nameSearch"
-            class="search-input"
-            placeholder=""
-          />
+          <input type="text" id="nameSearch" class="search-input" placeholder="" />
           <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
         </div>
       </div>
+      
+      <div class="filter-bar" id="filterBar" style="display: none;">
+        <div class="filters-group">
+          <label><input type="checkbox" name="vegetarian" /> Vegetarian</label>
+          <label><input type="checkbox" name="vegan" /> Vegan</label>
+          <label><input type="checkbox" name="glutenFree" /> Gluten-free</label>
+          <label><input type="checkbox" name="lactoseFree" /> Lactose-free</label>
+          <label><input type="checkbox" name="spicy" /> Spicy</label>
+        </div>
+      </div>
+      
 
       <div id="recipe-list" class="info-container"></div>
     </main>
