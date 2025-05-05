@@ -9,27 +9,73 @@
 
 /*Header Shopping list*/
 .categories-heading {
-  color: var(--secondary-color);
   text-align: center;
   font-size: 2rem;
+  margin-top: 5rem;
   font-family: var(--primary-font);
-  margin: 0;
-  width: 90%;
-  max-width: 800px;
+  color: var(--secondary-color);
 }
 
-.add-container {
+/*flex container for garbage, input, button*/
+#value-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   position: relative;
-  display: inline-block; /*keeps container tight to input size */
+  justify-content: flex-end;
+  margin-bottom: 2.5rem;
+  margin-right: 3%;
 }
 
-#name-search {
+/*delete icon*/
+#garbage-icon {
+  cursor: pointer;
+  color: var(--secondary-color);
+  margin-right: 2rem;
+  font-size: 1.7rem;
+}
+
+#garbage-icon:hover {
+  color: var(--hovering-color);
+}
+
+/*input field*/
+#value-input {
   width: 100%;
   padding: 0.5rem 2.5rem 0.5rem 0.75rem;
   font-size: 1rem;
   border: 1px solid gray;
-  border-radius: 8px;
-  box-sizing: border-box;
+  border-radius: 2.5px;
+  width: 200px;
+  font-family: var(--text-font);
+}
+
+/*button*/
+#add-ingredient {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2.5px;
+  font-family: var(--text-font);
+  transition: background-color 0.2s ease;
+}
+
+#add-ingredient:hover {
+  background-color: var(--hovering-color);
+}
+
+/*Shopping list items that get added*/
+#shopping-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0.6rem;
+  row-gap: 0.2rem;
+  padding: 1rem;
+  font-family: var(--text-font);
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 4rem;
 }
 
 .ingredient-card {
@@ -39,15 +85,4 @@
   padding: 0.7rem;
   margin-bottom: 0.5rem;
   border-radius: 2.5px;
-}
-
-.checkbox-ingredient {
-  margin-right: 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.ingredient-card div {
-  font-family: var(--text-font);
-  font-size: 1rem;
 }

@@ -1,53 +1,76 @@
-window.onload = function (ingredient) {
-  const shoppingListElement = document.getElementById("shopping-list-item");
+const inputElement = document.getElementById("value-input");
+const addButton = document.getElementById("add-ingredient");
+const listContainer = document.getElementById("shopping-list");
+const garbageElement = document.getElementById("garbage-icon");
 
-  shoppingListElement.innerHTML = "";
+function loadList() {
+  listContainer.innerHTML = "";
+  const items = JSON.parse(localStorage.getItem("customIngredients") || "[]");
 
-  // Loop through all keys in localStorage
-  // The next 6 lines come from: https://chatgpt.com/c/680f9a3c-c188-8010-8247-4c8b117bc925, accessed: 28.04.
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
+  //if there are no items - text shows
+  if (items.length === 0) {
+    listContainer.innerHTML = "<p>No items yet.</p>";
+    return;
+  }
 
-    // Only take keys that start with "recipeIngredients_"
-    if (key.startsWith("recipeIngredients_")) {
-      const ingredientsJSON = localStorage.getItem(key);
-      const ingredients = JSON.parse(ingredientsJSON);
+  //create a card for every item that gets added
+  items.forEach((item) => {
+    const card = document.createElement("div");
+    card.classList.add("ingredient-card");
+    card.innerText = item;
 
-      ingredients.forEach((ingredient) => {
-        // create a div for every ingredient
-        const ingredientCard = document.createElement("div");
-        ingredientCard.classList.add("ingredient-card");
+    card.addEventListener("click", () => {
+      removeItem(item);
+    });
 
-        // Checkbox
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.classList.add("checkbox-ingredient");
+    listContainer.appendChild(card);
+  });
+}
 
-        // If you click the checkbox, it will get removed
-        checkbox.addEventListener("change", () => {
-          if (checkbox.checked) {
-            localStorage.removeItem("ingredientCard");
-          } else {
-            ingredientCard.style.textDecoration = "none";
-          }
-        });
+//add an item to the local Storage
+function addItem(item) {
+  const items = JSON.parse(localStorage.getItem("customIngredients") || "[]");
+  items.push(item);
+  localStorage.setItem("customIngredients", JSON.stringify(items));
+  loadList();
+}
 
-        // show the ingredient
-        const nameContainer = document.createElement("div");
-        const ingredientText = `${ingredient.amount ?? ""} ${
-          ingredient.unit ?? ""
-        } ${ingredient.ingredient}`.trim();
-        nameContainer.innerText = ingredientText;
-        ingredientCard.appendChild(checkbox);
-        ingredientCard.appendChild(nameContainer);
+//remove item (all the items that did not get removed, will get added to list again)
+function removeItem(item) {
+  let items = JSON.parse(localStorage.getItem("customIngredients") || "[]");
+  let newItems = [];
 
-        shoppingListElement.appendChild(ingredientCard);
-      });
+  for (let i = 0; i < items.length; i++) {
+    if (items[i] !== item) {
+      newItems.push(items[i]);
     }
   }
 
-  // if nothing can be found in the local storage
-  if (shoppingListElement.innerHTML === "") {
-    shoppingListElement.innerHTML = "<p>No items in the shopping list</p>";
+  localStorage.setItem("customIngredients", JSON.stringify(newItems));
+  loadList();
+}
+
+//if you click button "Add", the value gets saved
+function setItem() {
+  const value = inputElement.value.trim();
+  if (value === "") return;
+  addItem(value);
+  inputElement.value = "";
+}
+
+addButton.addEventListener("click", setItem);
+
+//add item with enter
+inputElement.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    setItem();
   }
-};
+});
+
+//delete all items at once and clear array
+garbageElement.addEventListener("click", () => {
+  localStorage.setItem("customIngredients", JSON.stringify([]));
+  loadList();
+});
+
+loadList();
