@@ -32,29 +32,6 @@
   font-size: 3rem;
 }
 
-/*BUTTON SHOPPING-LIST*/
-#button-list {
-  background-color: #0d9277;
-  border: none;
-  color: #ffffff;
-  border-radius: 2.5px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-#button-list:hover {
-  background-color: #0b5e4f;
-}
-
-#button-save {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-left: 0;
-}
-
 /*SAVE ICON*/
 .save-icon {
   font-size: 2rem;
@@ -63,6 +40,10 @@
 
 .save-icon:hover {
   color: #0b5e4f;
+}
+
+#button-save {
+  margin-left: 0;
 }
 
 /*SERVINGS*/
@@ -161,9 +142,15 @@
   padding-bottom: 1rem;
 }
 
-#textarea {
-  width: 90%;
-}
 #notes-headline {
   color: #f2f1df;
+}
+
+#notes-headline {
+  margin-left: 2%;
+}
+#textarea {
+  width: 95%;
+  display: block;
+  margin: 0 auto;
 }

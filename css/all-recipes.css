@@ -1,0 +1,29 @@
+/* BUTTON */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem 0 2rem; /* top, right, bottom, left padding */
+}
+
+.button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem; /* top and bottom padding and left and right padding */
+  border-radius: 2.5px;
+  font-family: var(--primary-font);
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--hovering-color);
+}
+
+/*Headline*/
+.categories-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+}
