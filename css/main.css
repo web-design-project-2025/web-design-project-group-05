@@ -15,7 +15,7 @@
 #logo {
   display: block;
   align-items: start;
-  padding-left: 0.5rem;
+  padding-left: 0.4rem;
   padding-top: 0rem;
   max-width: 38%;
 }
@@ -117,7 +117,7 @@ footer {
 li {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.rem;
 }
 
 .footer-header a {
