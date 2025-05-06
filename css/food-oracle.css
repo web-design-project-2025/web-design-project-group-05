@@ -1,0 +1,107 @@
+/*Top background image*/
+#background-image {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#background-image-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#headline-long-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0 1rem;
+  width: 90%;
+  max-width: 800px;
+}
+/* Oracle styles */
+.grid-orakel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  gap: 30px;
+  margin: 5rem 7%;
+}
+
+.food-orakel-grid {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.food-orakel-grid img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.food-orakel-grid figcaption {
+  font-style: italic;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  color: var(--text-black);
+  text-align: left;
+  margin-top: 0.7rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+/* When a recipe is shown */
+.food-orakel-grid.showing-recipes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-orakel-grid.showing-recipes img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.food-orakel-grid.showing-recipes figcaption {
+  font-style: italic;
+  font-size: 1rem;
+  font-family: var(--primary-font);
+  color: var(--text-black);
+  text-align: left;
+  margin-top: 0.7rem;
+}
+
+/* Reset Button */
+.reset-button {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: var(--text-white);
+  margin-top: 1.15rem;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: var(--hovering-color);
+}
