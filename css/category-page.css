@@ -122,14 +122,16 @@ a {
 }
 
 .food-orakel-grid {
-  width: 60%;
-  position: relative;
+  width: 100%;
+  max-width: 350px;
   text-align: center;
 }
 
 .food-orakel-grid img {
   width: 100%;
-  border-radius: 2.5px;
+  max-width: 350px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .food-orakel-grid figcaption {
