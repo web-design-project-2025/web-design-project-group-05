@@ -10,72 +10,57 @@
   --text-white: #ffffff;
 }
 
-/*HEADER*/
-
-#logo {
-  display: block;
-  align-items: start;
-  padding-left: 0.4rem;
-  padding-top: 0rem;
-  max-width: 38%;
-}
-
-.navigation-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
-  color: var(--text-white);
-}
-
-.navigation-menu a {
-  color: var(--text-white);
-  text-decoration: none;
-  font-weight: 500;
-  white-space: nowrap;
-}
-
-header {
-  background-color: var(--primary-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 2.5rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  position: relative; /* Make the nav element movable */
-  top: 1.25rem;
-}
-
-ul {
-  padding-left: 0;
-  margin-top: 0%;
-}
-
-nav ul,
-li {
-  display: flex;
-  gap: 3rem;
-  list-style: none;
-}
-
 body {
   margin: 0;
 }
 
-/* Adjust font size on smaller screens */
-@media (max-width: 1000px) {
-  #logo {
-    font-size: 2rem;
-  }
+/*HEADER*/
+header {
+  background-color: var(--primary-color);
+  padding: 0 2.5rem;
 }
 
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.8rem;
+}
+
+/* Logo*/
+#logo {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+/*Navigation*/
+.navigation-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+/* mobile design */
 @media (max-width: 600px) {
-  #logo {
-    font-size: 1.6rem;
+  .header-inner {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .navigation-menu {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -117,7 +102,7 @@ footer {
 li {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
-  margin-bottom: 0.rem;
+  margin-bottom: 0rem;
 }
 
 .footer-header a {

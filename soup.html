@@ -24,17 +24,19 @@
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <img id="logo" src="img/munchly-logo.png" alt="Munchly Logo" />
-      </a>
-      <nav>
-        <ul class="navigation-menu">
-          <li><a href="all-recipes.html">ALL RECIPES</a></li>
-          <li><a href="saved.html">SAVED</a></li>
-          <li><a href="shopping-list.html">SHOPPING LIST</a></li>
-          <li><a href="log-in.html">LOG IN</a></li>
-        </ul>
-      </nav>
+      <div class="header-inner">
+        <a href="index.html" class="logo-container">
+          <img id="logo" src="img/munchly-logo.png" alt="Munchly Logo" />
+        </a>
+        <nav>
+          <ul class="navigation-menu">
+            <li><a href="all-recipes.html">ALL RECIPES</a></li>
+            <li><a href="saved.html">SAVED</a></li>
+            <li><a href="shopping-list.html">SHOPPING LIST</a></li>
+            <li><a href="log-in.html">FOOD ORACLE</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <figure id="background-image">
@@ -47,20 +49,32 @@
       </figure>
 
       <div class="top-bar">
-        <img src="img/filters.png" alt="Show Filters" id="toggleFilters" style="cursor: pointer; width: 30px;" />
-        
+        <img
+          src="img/filters.png"
+          alt="Show Filters"
+          id="toggleFilters"
+          style="cursor: pointer; width: 30px"
+        />
+
         <div class="search-container">
-          <input type="text" id="nameSearch" class="search-input" placeholder="" />
+          <input
+            type="text"
+            id="nameSearch"
+            class="search-input"
+            placeholder=""
+          />
           <i class="fa-solid fa-magnifying-glass search-icon-inside"></i>
         </div>
       </div>
-      
-      <div class="filter-bar" id="filterBar" style="display: none;">
+
+      <div class="filter-bar" id="filterBar" style="display: none">
         <div class="filters-group">
           <label><input type="checkbox" name="vegetarian" /> Vegetarian</label>
           <label><input type="checkbox" name="vegan" /> Vegan</label>
           <label><input type="checkbox" name="glutenFree" /> Gluten-free</label>
-          <label><input type="checkbox" name="lactoseFree" /> Lactose-free</label>
+          <label
+            ><input type="checkbox" name="lactoseFree" /> Lactose-free</label
+          >
           <label><input type="checkbox" name="spicy" /> Spicy</label>
         </div>
       </div>
