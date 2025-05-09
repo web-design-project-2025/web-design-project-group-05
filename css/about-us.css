@@ -9,6 +9,7 @@
   font-weight: 500;
   font-size: 2rem;
   margin-top: 6rem;
+  margin-left: 3%;
 }
 
 /*Top background image*/
@@ -62,7 +63,7 @@
 }
 
 .picture-description {
-  width: 70%;
+  width: 100%;
 }
 
 /*Favorite Recipes*/
