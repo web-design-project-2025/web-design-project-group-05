@@ -49,7 +49,7 @@
         "Mash avocado and season with salt, pepper, and lemon juice.",
         "Spread on toast and sprinkle chili flakes if desired."
       ],
-      "category_ids": [1, 2],
+      "category_ids": [1, 2, 4],
       "category": "breakfast"
     },
     {
@@ -162,7 +162,7 @@
         "Refrigerate at least 2 hours or overnight.",
         "Top with berries before serving."
       ],
-      "category_ids": [1, 3, 4],
+      "category_ids": [2, 3, 4],
       "category": "breakfast"
     },
     {
@@ -266,7 +266,7 @@
         "Layer yogurt, granola, and berries.",
         "Drizzle honey if desired and serve."
       ],
-      "category_ids": [2, 3],
+      "category_ids": [2],
       "category": "breakfast"
     },
     {
@@ -317,7 +317,7 @@
         "Cook oats with liquid and salt.",
         "Top with berries and sweetener."
       ],
-      "category_ids": [1, 2, 3],
+      "category_ids": [2, 4],
       "category": "breakfast"
     },
     {
@@ -397,7 +397,7 @@
         "Cook gently with butter until curds form.",
         "Serve immediately."
       ],
-      "category_ids": [2],
+      "category_ids": [2, 3],
       "category": "breakfast"
     },
     {
@@ -540,7 +540,7 @@
         "Add veggies and water or coconut milk. Cover and simmer until veggies are tender (15–20 minutes).",
         "Garnish with coriander and serve."
       ],
-      "category_ids": [1, 2],
+      "category_ids": [1, 2, 3, 4],
       "category": "main"
     },
     {
@@ -663,7 +663,7 @@
         "Adjust seasoning to taste.",
         "Serve on lettuce leaves, whole grain toast, or as is."
       ],
-      "category_ids": [2, 4],
+      "category_ids": [2, 3],
       "category": "main"
     },
     {
@@ -727,7 +727,7 @@
         "Drizzle with olive oil, lemon juice, and seasoning.",
         "Toss gently and top with herbs."
       ],
-      "category_ids": [1, 2, 3],
+      "category_ids": [1, 2, 3, 4],
       "category": "main"
     },
     {
@@ -786,7 +786,7 @@
         "Add cooked rice, soy sauce, and stir well.",
         "Serve hot, optionally with green onions on top."
       ],
-      "category_ids": [2, 4],
+      "category_ids": [1, 2, 4],
       "category": "main"
     },
     {
@@ -842,7 +842,7 @@
         "Bake for 18–20 mins until set.",
         "Cool slightly before serving or refrigerate for grab-and-go."
       ],
-      "category_ids": [2],
+      "category_ids": [2, 3],
       "category": "main"
     },
     {
@@ -901,7 +901,7 @@
         "Remove from heat and toss with pesto, cherry tomatoes, salt, pepper, and lemon juice.",
         "Top with Parmesan and serve immediately."
       ],
-      "category_ids": [1, 2],
+      "category_ids": [1, 2, 3],
       "category": "main"
     },
     {
@@ -961,7 +961,7 @@
         "Add lemon slices on top of salmon.",
         "Bake for 20 mins or until salmon is flaky and veggies are tender."
       ],
-      "category_ids": [2],
+      "category_ids": [3, 4],
       "category": "main"
     },
     {
@@ -1033,7 +1033,7 @@
         "Slice sweet potatoes open and mash slightly.",
         "Fill with beans, avocado, yogurt, and herbs. Sprinkle chili flakes and serve hot."
       ],
-      "category_ids": [1, 2],
+      "category_ids": [2,3,5],
       "category": "main"
     },
     {
@@ -1080,7 +1080,7 @@
         "Top with sesame seeds.",
         "Serve immediately."
       ],
-      "category_ids": [2],
+      "category_ids": [1, 2],
       "category": "snacks"
     },
     {
@@ -1120,7 +1120,7 @@
         "Top with lemon juice, chili flakes and salt.",
         "Serve immediately."
       ],
-      "category_ids": [1, 2, 3, 4]
+      "category_ids": [1, 2, 3, 4, 5]
     },
     {
       "id": 21,
@@ -1210,7 +1210,7 @@
         "Layer avocado, red onion, and shrimps on top.",
         "Fold the tortilla and serve."
       ],
-      "category_ids": [1, 2],
+      "category_ids": [4],
       "category": "snacks"
     },
     {
@@ -1261,7 +1261,7 @@
         "Combine all ingredients in a bowl.",
         "Stir gently and serve."
       ],
-      "category_ids": [1],
+      "category_ids": [1, 2, 3, 4, 5],
       "category": "snacks"
     },
     {
@@ -1338,7 +1338,7 @@
         "Mix well until combined.",
         "Serve immediately."
       ],
-      "category_ids": [1, 2],
+      "category_ids": [1, 2, 3, 4, 5],
       "category": "snacks"
     },
     {
@@ -1397,7 +1397,7 @@
         "Pour the honey mixture over the dry ingredients and stir.",
         "Press into a lined pan and refrigerate for 20 minutes before cutting into bars."
       ],
-      "category_ids": [2],
+      "category_ids": [2, 3],
       "category": "snacks"
     },
     {
@@ -1437,7 +1437,7 @@
         "Top with lemon juice, chili flakes, and salt.",
         "Serve immediately."
       ],
-      "category_ids": [1, 3, 4],
+      "category_ids": [1, 2, 3, 4, 5],
       "category": "snacks"
     },
     {
@@ -1472,7 +1472,7 @@
         "Optionally, slice the dates in half and stuff them with almond or peanut butter before rolling in coconut.",
         "Serve immediately or refrigerate for a few minutes."
       ],
-      "category_ids": [2],
+      "category_ids": [1, 2, 3, 4],
       "category": "snacks"
     },
     {
@@ -1519,7 +1519,7 @@
         "Let it sit in the fridge for at least 2 hours or overnight to thicken.",
         "Top with fresh blackberries before serving."
       ],
-      "category_ids": [2],
+      "category_ids": [2, 3],
       "category": "snacks"
     },
     {
@@ -1578,7 +1578,7 @@
         "Add the remaining water and mix well.",
         "Serve over ice."
       ],
-      "category_ids": [4],
+      "category_ids": [2, 3, 4],
       "category": "beverages"
     },
     {
@@ -1631,7 +1631,7 @@
         "Whisk until well combined and frothy.",
         "Stir in sweetener and serve warm."
       ],
-      "category_ids": [4],
+      "category_ids": [1, 2, 3, 4],
       "category": "beverages"
     },
     {
@@ -1677,7 +1677,7 @@
         "Blend all ingredients until smooth.",
         "Serve immediately."
       ],
-      "category_ids": [4],
+      "category_ids": [2, 3],
       "category": "beverages"
     },
     {
@@ -1729,7 +1729,7 @@
         "Blend all ingredients until creamy.",
         "Pour into a glass and enjoy chilled."
       ],
-      "category_ids": [4],
+      "category_ids": [1, 2, 3, 4],
       "category": "beverages"
     },
     {
@@ -1788,7 +1788,7 @@
         "Top with sparkling water and ice.",
         "Stir gently and serve."
       ],
-      "category_ids": [4],
+      "category_ids": [1, 2, 3, 4],
       "category": "beverages"
     },
     {
@@ -1841,7 +1841,7 @@
         "Shake or stir well.",
         "Pour over ice and enjoy."
       ],
-      "category_ids": [4],
+      "category_ids": [1, 2, 3, 4],
       "category": "beverages"
     },
     {
@@ -1907,7 +1907,7 @@
         "Pour in brewed tea and cold water.",
         "Serve over ice."
       ],
-      "category_ids": [4],
+      "category_ids": [2, 3, 4],
       "category": "beverages"
     },
     {
@@ -1954,7 +1954,7 @@
         "Let it infuse for at least 1 hour in the refrigerator.",
         "Serve over ice."
       ],
-      "category_ids": [4],
+      "category_ids": [1, 2, 3, 4],
       "category": "beverages"
     },
     {
@@ -2006,7 +2006,7 @@
         "Add ice cubes and blend again until frothy.",
         "Serve immediately."
       ],
-      "category_ids": [4],
+      "category_ids": [1, 2, 3, 4],
       "category": "beverages"
     },
     {
@@ -2248,7 +2248,7 @@
         "Simmer for 15–20 minutes. Blend part of the soup for creaminess, if desired.",
         "Stir in cream, season with salt and pepper, and garnish with parsley before serving."
       ],
-      "category_ids": [2],
+      "category_ids": [2, 4],
       "category": "soup"
     },
     {
@@ -2602,7 +2602,7 @@
         "Roll the sushi tightly using the bamboo mat, then slice into pieces.",
         "Serve immediately."
       ],
-      "category_ids": [1],
+      "category_ids": [2, 3],
       "category": "appetizers"
     },
     {
@@ -2641,7 +2641,7 @@
         "Wrap each melon cube with a slice of prosciutto.",
         "Drizzle with balsamic glaze and serve immediately."
       ],
-      "category_ids": [2],
+      "category_ids": [3, 4],
       "category": "appetizers"
     },
     {
@@ -2687,7 +2687,7 @@
         "Add a dollop of cream cheese (optional) and sprinkle with fresh dill.",
         "Serve immediately."
       ],
-      "category_ids": [1],
+      "category_ids": [3],
       "category": "appetizers"
     },
     {
@@ -2826,7 +2826,7 @@
         "Optionally, garnish with fresh thyme and season with a pinch of salt and black pepper.",
         "Serve immediately."
       ],
-      "category_ids": [1],
+      "category_ids": [2],
       "category": "appetizers"
     },
     {
@@ -2904,7 +2904,7 @@
         "Season with salt, pepper, and oregano.",
         "Toss gently and sprinkle with feta before serving."
       ],
-      "category_ids": [1],
+      "category_ids": [1, 2],
       "category": "salads"
     },
     {
@@ -2970,7 +2970,7 @@
         "Add lime juice, olive oil, and salt.",
         "Stir gently and serve chilled or at room temperature."
       ],
-      "category_ids": [5],
+      "category_ids": [1, 2, 3, 4],
       "category": "salads"
     },
     {
@@ -3023,7 +3023,7 @@
         "Drizzle with balsamic glaze.",
         "Toss lightly before serving."
       ],
-      "category_ids": [5],
+      "category_ids": [2, 3],
       "category": "salads"
     },
     {
@@ -3095,7 +3095,7 @@
         "Pour dressing over the salad and toss well.",
         "Sprinkle with sesame seeds before serving."
       ],
-      "category_ids": [5],
+      "category_ids": [1, 2, 4],
       "category": "salads"
     },
     {
@@ -3154,7 +3154,7 @@
         "Mix apple cider vinegar and maple syrup for dressing.",
         "Toss roasted sweet potatoes with kale and drizzle with dressing."
       ],
-      "category_ids": [5],
+      "category_ids": [1, 2, 3, 4],
       "category": "salads"
     },
     {
@@ -3200,7 +3200,7 @@
         "Add pesto and mix until everything is coated.",
         "Garnish with fresh basil and serve immediately."
       ],
-      "category_ids": [5],
+      "category_ids": [2, 3],
       "category": "salads"
     }
   ]
