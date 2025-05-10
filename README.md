@@ -1,5 +1,7 @@
 # MUNCHLY :woman_cook:
 
+We created this recipe website Munchly where you can find all kinds of recipes:
+
 ## 1. Feature description
 
 ### Filter option
@@ -51,3 +53,23 @@ On this page, you will have the possibility to check out the Nutrition facts if 
 ### Footer
 
 If you scroll down to the footer you can click on "Article". That will redirect you to our article: "Wholesome Vegetarian Recipes for a Healthier Lifestyle" with many inspiring pictures and a nice text.
+
+## About our code
+
+### JavaScript
+
+We have created one JS file for each category to only display the recipes from this specific category.
+
+The recipes.js is connected to all the recipe pages and holds all the functionality for what you can do on the recipe page.
+
+### CSS
+
+We have a css file (main.css) that we connected to every page that has the styling for the header and footer.
+
+The main-dishes.css page is connected to all category pages that display all the recipe options from a specific category.
+
+The recipe-page.css is connected to all all the recipes.
+
+### Json
+
+We have two json files. In the recipe.json, we hold all the data for the recipes from all categories. In the category.json we have all the filter options that the user can filter after such as vegan or vegetarian. Each filter has an id. When a filter suits a recipe, then we added the category_id to the recipe.

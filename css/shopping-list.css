@@ -86,3 +86,28 @@
   margin-bottom: 0.5rem;
   border-radius: 2.5px;
 }
+
+/*Responsiveness*/
+
+@media screen and (max-width: 1024px) {
+  #shopping-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  #shopping-list {
+    grid-template-columns: 1fr 1fr;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories-heading {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+}
