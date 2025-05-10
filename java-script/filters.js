@@ -48,7 +48,7 @@ function setupFilters(recipes) {
   });
 }
 
-// load the data and filter by category
+ // load the data and filter by category
 async function loadData(categoryFilter) {
   const response = await fetch("json/recipe.json");
   const data = await response.json();
@@ -59,6 +59,5 @@ async function loadData(categoryFilter) {
     (recipe) => recipe.category === categoryFilter
   );
 
-  displayRecipes(categoryRecipes); // displays the recipes
-  setupFilters(categoryRecipes); // sets up the filters
+  setupFilters(categoryRecipes); // sets up the filters 
 }
