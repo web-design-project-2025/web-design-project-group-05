@@ -49,6 +49,10 @@ header {
   color: white;
 }
 
+.navigation-menu li {
+  margin-bottom: 0rem;
+}
+
 /* mobile design */
 @media (max-width: 600px) {
   .header-inner {
