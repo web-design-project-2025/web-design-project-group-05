@@ -1,4 +1,4 @@
-/*Top background image*/
+/* Top background image */
 #background-image {
   position: relative;
   width: 100%;
@@ -29,26 +29,38 @@
   width: 90%;
   max-width: 800px;
 }
+
 /* Oracle styles */
+
+/* Category Grid Layout */
 .grid-orakel {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  ); /* Responsive grid */
   justify-items: center;
-  gap: 30px;
+  gap: 30px; 
   margin: 5rem 7%;
 }
 
+/* Category card */
 .food-orakel-grid {
   width: 100%;
   max-width: 350px;
   text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack image and caption */
+  margin: 0;
 }
 
 .food-orakel-grid img {
   width: 100%;
   max-width: 350px;
-  border-radius: 8px;
+  border-radius: 2.5px;
   margin-bottom: 10px;
+  height: auto; /* Ensures the image size stays fixed */
 }
 
 .food-orakel-grid figcaption {
@@ -57,19 +69,23 @@
   font-family: var(--primary-font);
   color: var(--text-black);
   text-align: left;
-  margin-top: 0.7rem;
+  margin-top: 0;
+  position: relative;
+  bottom: 0;
 }
 
+/* Link styling */
 a {
   text-decoration: none;
   color: var(--text-black);
 }
 
-/* When a recipe is shown */
+/* When a recipe is shown (showing-recipes state) */
 .food-orakel-grid.showing-recipes {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .food-orakel-grid.showing-recipes img {
@@ -85,7 +101,7 @@ a {
   font-family: var(--primary-font);
   color: var(--text-black);
   text-align: left;
-  margin-top: 0.7rem;
+  margin-top: 0;
 }
 
 /* Reset Button */
@@ -98,10 +114,89 @@ a {
   font-size: 0.9rem;
   background-color: var(--secondary-color);
   border: none;
-  border-radius: 8px;
+  border-radius: 2.5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .reset-button:hover {
   background-color: var(--hovering-color);
+}
+
+/* Filter bar container */
+.filter-bar {
+  font-family: var(--primary-font);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.5rem;
+  padding-left: 1em;
+  padding-right: 1em;
+  flex-wrap: wrap;
+}
+
+/* Each label inside the filter bar */
+.filter-bar label {
+  display: inline-flex; /* Ensures the label is displayed in a row with the checkbox */
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+/* Styling the checkboxes */
+.filter-bar input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Media Queries for responsiveness */
+
+/* For smaller screens, adjust grid and image sizes */
+@media (max-width: 768px) {
+  .grid-orakel {
+    margin: 2rem 5%;
+  }
+
+  .food-orakel-grid {
+    max-width: 90%; /* Adjust the max width for smaller screens */
+  }
+
+  .food-orakel-grid img {
+    max-width: 100%; /* Ensure the images scale properly */
+  }
+
+  #headline-long-image {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 0 2rem;
+  }
+}
+
+/* For very small screens like mobile portrait */
+@media (max-width: 480px) {
+  .grid-orakel {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+    gap: 15px;
+  }
+
+  .food-orakel-grid {
+    max-width: 100%; /* Full width for category cards */
+  }
+
+  .food-orakel-grid img {
+    max-width: 100%; /* Ensure images adjust for smaller screens */
+  }
+
+  .reset-button {
+    font-size: 0.8rem; /* Smaller button on small screens */
+  }
+
+  #headline-long-image {
+    font-size: 1.3rem; /* Smaller font size for very small screens */
+  }
 }

@@ -1,5 +1,5 @@
-let recipes = []; 
-let shownRecipes = {}; 
+let recipes = [];
+let shownRecipes = {};
 
 // Load recipe data and set up event listeners
 async function loadData() {
@@ -28,7 +28,7 @@ function setupCardClick(categoryCard) {
     const filteredRecipes = recipes.filter(
       (recipe) => recipe.category === category
     );
-    showRandomRecipe(filteredRecipes, newCard); 
+    showRandomRecipe(filteredRecipes, newCard);
   });
 }
 
@@ -38,6 +38,7 @@ function showRandomRecipe(filteredRecipes, categoryCard) {
 
   // If no recipes have been shown yet for this category, shuffle them
   if (!shownRecipes[category]) {
+    // The idea to use the function "shuffle" was taken from here: https://p5js.org/reference/p5/shuffle/
     shownRecipes[category] = shuffle(filteredRecipes);
   }
 
@@ -105,6 +106,7 @@ function capitalizeFirstLetter(string) {
 }
 
 // Shuffle an array randomly
+// The method to shuffle the array was modified from here: https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
 function shuffle(array) {
   let index = array.length;
 

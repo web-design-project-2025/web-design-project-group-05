@@ -1,4 +1,4 @@
-/* BANNER IMAGE AND TEXT */
+/* Banner Image and Text */
 #background-image {
   position: relative;
   width: 100%;
@@ -24,7 +24,7 @@
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-5%, -50%);
+  transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.7);
   color: black;
   padding: 1rem;
@@ -58,13 +58,17 @@ a {
 }
 
 .button {
-  background-color: var(--secondary-color);
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem; /* top and bottom padding and left and right padding */
-  border-radius: 2.5px;
   font-family: var(--primary-font);
-  transition: background-color 0.2s ease;
+  font-weight: 400;
+  color: var(--text-white);
+  margin-top: 1.15rem;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 2.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -130,7 +134,7 @@ a {
 .food-orakel-grid img {
   width: 100%;
   max-width: 350px;
-  border-radius: 8px;
+  border-radius: 2.5px;
   margin-bottom: 10px;
 }
 
@@ -140,7 +144,7 @@ a {
   font-family: var(--primary-font);
   color: var(--text-black);
   text-align: left;
-  margin-top: 0.7rem;
+  margin-top: 0;
 }
 
 /* Recipe card layout when a recipe is displayed */
@@ -203,10 +207,135 @@ a {
   font-size: 0.9rem;
   background-color: var(--secondary-color);
   border: none;
-  border-radius: 8px;
+  border-radius: 2.5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .reset-button:hover {
   background-color: var(--hovering-color);
+}
+
+/* Responsive Design for different screen sizes */
+@media (max-width: 700px) {
+  /* Banner Text */
+  .text-on-banner {
+    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+  }
+
+  .categories-heading {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  /* Grid Layout for Categories */
+  .grid-categories {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+
+  .grid-item {
+    width: 90%; /* Adjust item width */
+  }
+
+  /* Food Orakel Grid */
+  .grid-orakel {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  /* Recipe Grid */
+  .food-orakel-grid {
+    max-width: 100%;
+  }
+
+  /* Recipe Card */
+  .recipe-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .recipe-image {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  /* Banner Text */
+  .text-on-banner {
+    font-size: 1.4rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+  }
+
+  .categories-heading {
+    font-size: 1.8rem;
+    margin-top: 4rem;
+  }
+
+  /* Grid Layout for Categories */
+  .grid-categories {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+
+  .grid-item {
+    width: 80%; /* Adjust item width */
+  }
+
+  /* Food Orakel Grid */
+  .grid-orakel {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+
+  /* Recipe Grid */
+  .food-orakel-grid {
+    max-width: 100%;
+  }
+
+  /* Recipe Card */
+  .recipe-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .recipe-image {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 901px) {
+  /* Banner Text */
+  .text-on-banner {
+    font-size: 1.5rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+  }
+
+  .categories-heading {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  /* Grid Layout for Categories */
+  .grid-categories {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  }
+
+  /* Food Orakel Grid */
+  .grid-orakel {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+  }
+
+  .food-orakel-grid {
+    max-width: 350px;
+  }
+
+  /* Recipe Card */
+  .recipe-card h2 {
+    font-size: 1.4rem;
+  }
 }

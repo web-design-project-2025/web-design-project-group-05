@@ -6,13 +6,17 @@
 }
 
 .button {
-  background-color: var(--secondary-color);
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem; /* top and bottom padding and left and right padding */
-  border-radius: 2.5px;
   font-family: var(--primary-font);
-  transition: background-color 0.2s ease;
+  font-weight: 400;
+  color: var(--text-white);
+  margin-top: 1.15rem;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 2.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .button:hover {
