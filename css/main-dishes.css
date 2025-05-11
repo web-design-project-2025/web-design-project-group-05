@@ -165,3 +165,16 @@ a.recipe-card-link {
   pointer-events: none;
   padding-right: 3rem;
 }
+
+/* Responsive */
+@media (max-width: 600px){
+  #recipe-list {
+      grid-template-columns: 1fr; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+  #recipe-list {
+      grid-template-columns: 1fr 1fr; 
+  }
+}
