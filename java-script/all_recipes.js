@@ -14,6 +14,7 @@ async function loadData() {
   const selectedRecipe = recipes.find((recipe) => recipe.id === recipeId);
  */
   displayRecipes(recipes);
+  setupFilters(recipes);
 }
 
 function displayRecipes(recipes) {

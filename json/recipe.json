@@ -1084,45 +1084,6 @@
       "category": "snacks"
     },
     {
-      "id": 20,
-      "name": "Avocado Rice Cake",
-      "image": "img-snacks/avocado-rice-cakes.jpg",
-      "time": { "value": 5, "unit": "minutes" },
-      "servings": { "value": 1, "unit": "serving" },
-      "nutrition_facts": {
-        "Calories": 180,
-        "Fat": 10,
-        "Carbs": 20,
-        "Protein": 3
-      },
-      "ingredients": [
-        {
-          "amount": 2,
-          "unit": null,
-          "ingredient": "rice cakes",
-          "comment": "gluten-free if needed"
-        },
-        {
-          "amount": 0.5,
-          "unit": null,
-          "ingredient": "avocado",
-          "comment": "mashed"
-        },
-        {
-          "amount": null,
-          "unit": null,
-          "ingredient": "Lemon juice, chili flakes, salt",
-          "comment": null
-        }
-      ],
-      "instructions": [
-        "Spread mashed avocado on rice cakes.",
-        "Top with lemon juice, chili flakes and salt.",
-        "Serve immediately."
-      ],
-      "category_ids": [1, 2, 3, 4, 5]
-    },
-    {
       "id": 21,
       "name": "Cottage Cheese Muesli Strawberry Bowl",
       "image": "img-snacks/cottage-cheese-muesli.jpg",
