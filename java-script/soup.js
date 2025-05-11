@@ -10,6 +10,34 @@ async function loadData() {
   const soupRecipes = recipes.filter((recipe) => recipe.category === "soup");
 
   displayRecipes(soupRecipes);
+
+  // Search functionality
+  // The way how to make working search bar was learnt and modified from this video: https://www.youtube.com/watch?v=ifi6dXOl3g4&list=LL&index=5&t=299s&ab_channel=Treehouse
+  const nameSearch = document.getElementById("nameSearch");
+  nameSearch.addEventListener("keyup", (e) => {
+    let currentValue = e.target.value.toLowerCase();
+
+    const filteredRecipes = soupRecipes.filter((recipe) => {
+      const currentValue = e.target.value.toLowerCase();
+
+      const nameMatch = recipe.name.toLowerCase().includes(currentValue);
+      const servingsMatch = recipe.servings.value
+        .toString()
+        .includes(currentValue);
+      const prepTimeMatch = recipe.time.value.toString().includes(currentValue);
+
+      const ingredientsMatch = recipe.ingredients.some((item) =>
+        item.ingredient.toLowerCase().includes(currentValue)
+      );
+
+      return nameMatch || servingsMatch || prepTimeMatch || ingredientsMatch;
+    });
+
+    // Clear old results before showing filtered ones
+    const recipeListContainer = document.getElementById("recipe-list");
+    recipeListContainer.innerHTML = "";
+    displayRecipes(filteredRecipes);
+  });
 }
 
 function displayRecipes(recipes) {

@@ -1,4 +1,9 @@
 let recipes = [];
+let filteredByCategory = [];
+
+document.addEventListener("DOMContentLoaded", async () => {
+  await loadData();
+});
 
 async function loadData() {
   const recipeResponse = await fetch("json/recipe.json");
@@ -7,9 +12,43 @@ async function loadData() {
 
   //filter from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter, accessed: 25.04.25
   // Filter recipes by category
-  const saladsRecipes = recipes.filter((recipe) => recipe.category === "salads");
+  filteredByCategory = recipes.filter((recipe) => recipe.category === "salads");
 
-  displayRecipes(saladsRecipes);
+  displayRecipes(filteredByCategory);
+
+  // Search functionality
+  // The way how to make working search bar was learnt and modified from this video: https://www.youtube.com/watch?v=ifi6dXOl3g4&list=LL&index=5&t=299s&ab_channel=Treehouse
+  const nameSearch = document.getElementById("nameSearch");
+  if (nameSearch) {
+    nameSearch.addEventListener("keyup", (e) => {
+      let currentValue = e.target.value.toLowerCase();
+
+      const filteredRecipes = filteredByCategory.filter((recipe) => {
+        const nameMatch = recipe.name?.toLowerCase().includes(currentValue);
+        const servingsMatch = recipe.servings?.value
+          ?.toString()
+          .includes(currentValue);
+        const prepTimeMatch = recipe.time?.value
+          ?.toString()
+          .includes(currentValue);
+
+        const ingredientsMatch = Array.isArray(recipe.ingredients)
+          ? recipe.ingredients.some((item) =>
+              item.ingredient?.toLowerCase().includes(currentValue)
+            )
+          : false;
+
+        return nameMatch || servingsMatch || prepTimeMatch || ingredientsMatch;
+      });
+
+      // Clear old results before showing filtered ones
+      const recipeListContainer = document.getElementById("recipe-list");
+      recipeListContainer.innerHTML = "";
+      displayRecipes(filteredRecipes);
+    });
+  } else {
+    console.warn("#nameSearch input not found on page");
+  }
 }
 
 function displayRecipes(recipes) {
@@ -64,5 +103,3 @@ function displayRecipes(recipes) {
     recipeListContainer.appendChild(recipeCard);
   });
 }
-
-loadData();
