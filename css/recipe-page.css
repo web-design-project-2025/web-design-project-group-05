@@ -32,6 +32,10 @@
 }
 
 /*SAVE ICON*/
+#save-time-servings {
+  margin-left: 0;
+}
+
 .save-icon {
   font-size: 2rem;
   color: #0d9277;
@@ -52,6 +56,23 @@
   gap: 2rem;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+#save-time-servings {
+  display: flex;
+  align-items: center;
+}
+
+#servings {
+  text-align: center;
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+#time {
+  text-align: center;
+  line-height: 1.2;
+  white-space: pre-line;
 }
 
 /*NUTRITION*/
@@ -88,11 +109,14 @@
 #nutrition-facts {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 0;
+  column-gap: 0rem;
+
+  margin-top: 1rem;
 }
 
 .facts-style {
   margin-bottom: 0;
+  margin-top: 0.2rem;
 }
 
 /*SECOND ROW*/
@@ -149,6 +173,7 @@
 }
 #textarea {
   width: 95%;
+  height: 4rem;
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -168,7 +193,37 @@
     grid-template-columns: 1fr 1fr;
     transition: all 0.8s ease;
   }
+
+  #class-servings {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  #button-save {
+    margin-top: 0;
+  }
+
+  #information {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .save-icon {
+    font-size: 1.6rem;
+  }
+
+  #nutrition-button {
+    gap: 1.5rem;
+    margin-top: 0;
+  }
 }
+
+/* @media screen and (max-width: 900px) {
+  #first-row {
+    grid-template-columns: 0.9fr 1.1fr;
+    transition: all 0.8s ease;
+  }
+} */
 
 @media screen and (max-width: 624px) {
   #first-row {
@@ -177,18 +232,24 @@
 
   #second-row {
     grid-template-columns: 1fr;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
     justify-items: center;
   }
 
+  /*Center beige background in the center*/
   #background_ingredients,
   #background_instructions {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
 
   #name {
     font-size: 2.3rem;
+  }
+
+  .save-icon {
+    font-size: 2rem;
   }
 }
