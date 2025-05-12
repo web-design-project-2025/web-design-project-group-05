@@ -36,7 +36,7 @@ header {
 }
 
 /* Navigation */
-.navigation-menu {
+.navigation {
   display: flex;
   gap: 2rem;
   list-style: none;
@@ -44,33 +44,48 @@ header {
   padding: 0;
 }
 
-.navigation-menu a {
+.navigation a {
   text-decoration: none;
   font-weight: 500;
   color: white;
 }
 
-.navigation-menu li {
+.navigation li {
   margin-bottom: 0rem;
 }
 
-/* Mobile Design */
-@media (max-width: 600px) {
-  .header-inner {
+#menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Design - menu icon appears under 820px screen size */
+@media (max-width: 820px) {
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 4.8rem;
+    right: 0rem;
+    background-color: var(--primary-color);
     flex-direction: column;
-    height: auto;
-    gap: 1rem;
-    padding: 1rem 0;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 0 0 2.5px 2.5px;
+    z-index: 1000;
   }
 
-  .navigation-menu {
-    flex-direction: column;
-    align-items: center;
+  .navigation.active {
+    display: flex;
+  }
+
+  #menu-icon {
+    display: block;
+    color: white;
   }
 }
 
 /* FOOTER */
-
 /* Background-color for the footer */
 footer {
   background-color: var(--primary-color);

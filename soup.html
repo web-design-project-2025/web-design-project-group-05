@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main-dishes.css" />
     <script src="java-script/soup.js" defer></script>
     <script src="java-script/filters.js"></script>
+    <script src="java-script/menu.js" defer></script>
     <title>Snacks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,12 +30,13 @@
           <img id="logo" src="img/munchly-logo.png" alt="Munchly Logo" />
         </a>
         <nav>
-          <ul class="navigation-menu">
+          <ul class="navigation">
             <li><a href="all-recipes.html">ALL RECIPES</a></li>
             <li><a href="saved.html">SAVED</a></li>
             <li><a href="shopping-list.html">SHOPPING LIST</a></li>
             <li><a href="oracle-page.html">FOOD ORACLE</a></li>
           </ul>
+          <div class="menu" id="menu-icon">&#9776;</div>
         </nav>
       </div>
     </header>
@@ -82,9 +84,8 @@
       <div id="recipe-list" class="info-container"></div>
 
       <script>
-        loadData('soup');
+        loadData("soup");
       </script>
-      
     </main>
 
     <footer>
