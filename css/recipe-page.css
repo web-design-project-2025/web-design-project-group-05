@@ -82,9 +82,9 @@
 }
 
 #button-nutrition {
-  background-color: #0d9277;
+  background-color: var(--secondary-color);
   border: none;
-  color: #ffffff;
+  color: var(--text-white);
   border-radius: 2.5px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -95,7 +95,7 @@
 }
 
 #button-nutrition:hover {
-  background-color: #0b5e4f;
+  background-color: var(--hover-color);
 }
 
 #nutrition-button {
@@ -128,17 +128,17 @@
 .ingredients-steps {
   padding: 10px;
   margin: 5px 0;
-  color: black;
+  color: var(--text-black);
 }
 
 #background_ingredients {
-  background-color: #f2f1df;
+  background-color: var(--beige);
   padding: 2rem;
   border-radius: 2.5px;
 }
 
 #background_instructions {
-  background-color: #f2f1df;
+  background-color: var(--beige);;
   padding: 2rem;
   border-radius: 2.5px;
 }
@@ -146,31 +146,29 @@
 .instruction-steps {
   padding: 10px;
   margin: 5px 0;
-  border: 1px solid #f2f1df;
-  color: black;
+  border: 1px solid var(--beige);
+  color: var(--text-black);
 }
 
 /*if item is selected*/
 .selected {
-  background-color: #f4912e;
-  color: #f2f1df;
+  background-color: var(--primary-color);
+  color: var(--beige);
 }
 
 /*NOTES*/
 #around-textarea {
-  background-color: #0d9277;
+  background-color: var(--secondary-color);
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-top: 3rem;
 }
 
 #notes-headline {
-  color: #f2f1df;
+  color: var(--beige);
+  margin-left: 2.5rem;
 }
 
-#notes-headline {
-  margin-left: 2%;
-}
 #textarea {
   width: 95%;
   height: 4rem;

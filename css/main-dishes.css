@@ -98,8 +98,8 @@ a.recipe-card-link {
 .top-bar {
   display: flex;
   justify-content: flex-end;
-  align-items: center; 
-  gap: 1.5rem;       
+  align-items: center;
+  gap: 1.5rem;
   width: 100%;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -140,7 +140,7 @@ a.recipe-card-link {
   flex: 1 1 0; /* allows the filters to grow and shrink */
 }
 
-.search-container{
+.search-container {
   position: relative;
   display: inline-block; /*keeps container tight to input size */
   padding-right: 3rem;
@@ -166,15 +166,22 @@ a.recipe-card-link {
   padding-right: 3rem;
 }
 
+.search-input::placeholder {
+  color: #999; 
+  font-style: italic; 
+  font-size: 14px; 
+  opacity: 1; 
+}
+
 /* Responsive */
-@media (max-width: 600px){
+@media (max-width: 600px) {
   #recipe-list {
-      grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 601px) and (max-width: 800px){
+@media (min-width: 601px) and (max-width: 800px) {
   #recipe-list {
-      grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
   }
 }
