@@ -92,7 +92,7 @@ footer {
   padding-top: 1.7rem;
   height: auto;
   min-height: 16rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 /* Grid for the footer */
@@ -151,4 +151,26 @@ li {
 .footer-header a {
   text-decoration: none;
   color: var(--text-white);
+}
+
+#logo-footer {
+  height: 1.5rem;
+  width: auto;
+  display: block;
+  margin-top: 0.9rem;
+  margin-left: 1rem;
+}
+
+.sources {
+  color: var(--text-white);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
+  margin-left: 1rem; 
+  margin-bottom: -0.3rem;
+}
+
+.footer-sources {
+  display: flex;
+  align-items: center; 
+  padding-top: 2rem;
 }
