@@ -96,6 +96,16 @@ function displayRecipes(recipes) {
     saveIcon.addEventListener("click", () => {
       saveIcon.classList.toggle("fa-regular");
       saveIcon.classList.toggle("fa-solid");
+
+       // Save to localStorage
+  let saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  
+  // Prevent duplicates
+  const exists = saved.find((r) => r.id === recipe.id);
+  if (!exists) {
+    saved.push(recipe);
+    localStorage.setItem("savedRecipes", JSON.stringify(saved));
+  }
     });
 
     // Append info and icon to card
