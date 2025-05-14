@@ -92,10 +92,12 @@
   padding-right: 9px;
   font-family: var(--text-font);
   font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 #button-nutrition:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hovering-color);
 }
 
 #nutrition-button {
