@@ -167,10 +167,10 @@ a.recipe-card-link {
 }
 
 .search-input::placeholder {
-  color: #999; 
-  font-style: italic; 
-  font-size: 14px; 
-  opacity: 1; 
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 1;
 }
 
 /* Responsive */

@@ -15,6 +15,7 @@ function setupFilters(recipes) {
     '#filterBar input[type="checkbox"]'
   );
 
+  /* forEach method inspired by: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach */
   // runs the function when checkboxes are checked or unchecked
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", () => {
@@ -48,6 +49,7 @@ function setupFilters(recipes) {
   });
 }
 
+/* Async function was inspired by the following article: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function */
  // load the data and filter by category
 async function loadData(categoryFilter) {
   const response = await fetch("json/recipe.json");
