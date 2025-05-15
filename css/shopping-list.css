@@ -50,6 +50,13 @@
   font-family: var(--text-font);
 }
 
+#value-input::placeholder {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 1;
+}
+
 /*button*/
 #add-ingredient {
   background-color: var(--secondary-color);

@@ -41,7 +41,7 @@
 /* Style for each recipe info section */
 .recipe-info {
   width: 100%;
-  max-width: 300px; /* make cards narrower */
+  max-width: 300px;
   text-align: start;
   padding-left: 0rem;
 }
@@ -51,8 +51,8 @@
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* centers the smaller image inside the card */
-  border-radius: 4px;
+  margin: 0 auto;
+  border-radius: 2.5px;
 }
 
 /* Styling for recipe name and time */
@@ -114,10 +114,10 @@ a.recipe-card-link {
   gap: 1.5rem;
   width: 100%;
   margin: 3rem 0;
-  padding: 0 28rem;
+  padding: 0 3rem;
   box-sizing: border-box; /* padding doesn’t break layout */
   margin-top: -3rem;
-  transition: all 0.3s ease; /* Smooth transition for expanding and collapsing */
+  transition: all 0.3s ease;
 }
 
 /* Filter label styling */
@@ -143,16 +143,17 @@ a.recipe-card-link {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  flex: 1 1 0; /* Allows the filters to grow and shrink */
+  flex: 1 1 0;
 }
 
 /* Responsive adjustments for the filter bar */
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   .filter-bar {
-    padding: 0 1rem;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 2rem;
+    align-items: center;
+    margin-top: 1rem;
+
+    justify-content: center;
   }
 
   /* Make the filter labels smaller and align them vertically */
@@ -170,7 +171,7 @@ a.recipe-card-link {
 
 /* Make sure the filter bar is hidden initially */
 #filterBar {
-  display: none; /* Hidden by default */
+  display: none;
 }
 
 /* Filter bar toggle icon styles (on smaller screens) */
@@ -182,6 +183,9 @@ a.recipe-card-link {
   /* Adjust the size of the filter icon */
   #toggleFilters {
     width: 25px;
+    cursor: pointer;
+    width: 30px;
+    margin-left: 2.5rem;
   }
 }
 
@@ -197,7 +201,7 @@ a.recipe-card-link {
   padding: 0.5rem 2.5rem 0.5rem 0.75rem;
   font-size: 1rem;
   border: 1px solid gray;
-  border-radius: 8px;
+  border-radius: 2.5px;
   box-sizing: border-box;
 }
 
@@ -232,12 +236,9 @@ a.recipe-card-link {
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 1301px) {
   .info-container {
-    grid-template-columns: repeat(
-      4,
-      1fr
-    ); /* 4 columns layout for larger screens */
-    padding: 0 3rem 3rem 3rem; /* Add more padding on larger screens */
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 3rem 3rem 3rem;
   }
 }

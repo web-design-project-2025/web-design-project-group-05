@@ -16,18 +16,13 @@
 }
 
 #headline-long-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: var(--secondary-color);
   text-align: center;
   font-size: 2rem;
   font-family: var(--primary-font);
-  margin: 0;
-  padding: 0 1rem;
   width: 90%;
   max-width: 800px;
+  margin: 2rem auto 3rem auto;
 }
 
 /* Oracle styles */
@@ -40,7 +35,7 @@
     minmax(280px, 1fr)
   ); /* Responsive grid */
   justify-items: center;
-  gap: 30px; 
+  gap: 30px;
   margin: 5rem 7%;
 }
 
@@ -52,7 +47,7 @@
   position: relative;
   display: flex;
   flex-direction: column; /* Stack image and caption */
-  margin: 0;
+  margin: 0 auto;
 }
 
 .food-orakel-grid img {
@@ -60,16 +55,16 @@
   max-width: 350px;
   border-radius: 2.5px;
   margin-bottom: 10px;
-  height: auto; /* Ensures the image size stays fixed */
+  height: auto;
 }
 
 .food-orakel-grid figcaption {
-  font-style: italic;
-  font-size: 1rem;
   font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 1.3rem;
   color: var(--text-black);
-  text-align: left;
-  margin-top: 0;
+  text-align: center;
+  margin-top: 1rem;
   position: relative;
   bottom: 0;
 }
@@ -96,12 +91,11 @@ a {
 }
 
 .food-orakel-grid.showing-recipes figcaption {
-  font-style: italic;
   font-size: 1rem;
   font-family: var(--primary-font);
   color: var(--text-black);
   text-align: left;
-  margin-top: 0;
+  margin-top: 0.5rem;
 }
 
 /* Reset Button */
@@ -130,9 +124,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4.5rem;
-  padding-left: 1em;
-  padding-right: 1em;
+
+  padding-left: 4rem;
+  padding-right: 2rem;
   flex-wrap: wrap;
 }
 
@@ -164,15 +158,19 @@ a {
   }
 
   .food-orakel-grid {
-    max-width: 90%; /* Adjust the max width for smaller screens */
+    max-width: 80%;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .food-orakel-grid img {
-    max-width: 100%; /* Ensure the images scale properly */
+    max-width: 80%;
+    margin: 0 auto;
+    justify-content: center;
   }
 
   #headline-long-image {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
     padding: 0 2rem;
   }
 }
@@ -180,23 +178,23 @@ a {
 /* For very small screens like mobile portrait */
 @media (max-width: 480px) {
   .grid-orakel {
-    grid-template-columns: 1fr; /* Stack items in a single column */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
   .food-orakel-grid {
-    max-width: 100%; /* Full width for category cards */
+    max-width: 100%;
   }
 
   .food-orakel-grid img {
-    max-width: 100%; /* Ensure images adjust for smaller screens */
+    max-width: 100%;
   }
 
   .reset-button {
-    font-size: 0.8rem; /* Smaller button on small screens */
+    font-size: 0.8rem;
   }
 
   #headline-long-image {
-    font-size: 1.3rem; /* Smaller font size for very small screens */
+    font-size: 1.3rem;
   }
 }
