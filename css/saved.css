@@ -1,0 +1,72 @@
+/* remove button */
+.remove-button {
+  background-color: transparent;
+  color: var(--hovering-color);
+  border: 1px solid var(--secondary-color);
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-button:hover {
+  background-color: var(--hovering-color);
+  color: white;
+}
+
+/* Saved button */
+.save-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.save-icon.saved {
+  color: black;
+}
+
+.save-icon.not-saved {
+  color: white;
+}
+
+/* Grid */
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-left: 7%;
+}
+
+.recipe-card {
+  margin: 1.5rem;
+  text-align: center;
+  max-width: 300px;
+}
+
+/* banner */
+
+#background-image-img {
+  width: 100vw;
+}
+
+/* no saved recipe message */
+#no-saved-message {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}

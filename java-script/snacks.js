@@ -91,12 +91,40 @@ function displayRecipes(recipes) {
     prepContainer.innerText = `${recipe.time.value} ${recipe.time.unit}`;
     recipeInfo.appendChild(prepContainer);
 
-    // Save button
+   // Save icon
     const saveIcon = document.createElement("i");
-    saveIcon.classList.add("fa-regular", "fa-bookmark", "save-icon");
+    saveIcon.classList.add("fa-bookmark", "save-icon");
+
+    // Check if the recipe is already saved
+    let saved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+    const isSaved = saved.find((r) => r.id === recipe.id);
+    if (isSaved) {
+      saveIcon.classList.add("fa-solid", "saved"); // black fill
+    } else {
+      saveIcon.classList.add("fa-regular", "not-saved"); // white fill
+    }
+
+    // Click event - save/unsave
     saveIcon.addEventListener("click", () => {
-      saveIcon.classList.toggle("fa-regular");
-      saveIcon.classList.toggle("fa-solid");
+      let updatedSaved = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+
+      /* find and filter method inspired by this website: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find */
+      const alreadySaved = updatedSaved.find((r) => r.id === recipe.id);
+      if (alreadySaved) {
+        // Remove from saved
+        updatedSaved = updatedSaved.filter((r) => r.id !== recipe.id);
+        localStorage.setItem("savedRecipes", JSON.stringify(updatedSaved));
+
+        saveIcon.classList.remove("fa-solid", "saved");
+        saveIcon.classList.add("fa-regular", "not-saved");
+      } else {
+        // Add to saved
+        updatedSaved.push(recipe);
+        localStorage.setItem("savedRecipes", JSON.stringify(updatedSaved));
+
+        saveIcon.classList.remove("fa-regular", "not-saved");
+        saveIcon.classList.add("fa-solid", "saved");
+      }
     });
 
     // Append info and icon to card
