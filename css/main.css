@@ -92,17 +92,21 @@ footer {
   padding-top: 1.7rem;
   height: auto;
   min-height: 16rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 /* Grid for the footer */
 .footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 4rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  justify-content: space-between;
+  align-items: center;
   color: var(--text-white);
-  justify-items: center;
-  column-gap: 10rem;
+  margin-top: 2rem;
+  margin: 2rem auto 0 auto;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .footer a {
@@ -110,20 +114,19 @@ footer {
   color: var(--text-white);
 }
 
-@media (max-width: 820px) {
-  .footer {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-  }
-}
-
 @media (max-width: 600px) {
   .footer {
+    display: grid;
     grid-template-columns: 1fr;
-    row-gap: 2rem;
+    grid-auto-flow: row;
+    justify-content: center;
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  ul {
+    margin-left: 0;
   }
 
   .footer-header {
@@ -133,22 +136,56 @@ footer {
   li {
     font-size: 0.9rem;
   }
+
+  /*Sources*/
+  .footer-sources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    text-align: center;
+  }
 }
 
 .footer-header {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
 li {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--text-font);
   font-size: 1rem;
-  margin-bottom: 0.5rem;
   list-style: none;
 }
 
 .footer-header a {
   text-decoration: none;
   color: var(--text-white);
+}
+
+/*Where did we get the pictures from*/
+#logo-footer {
+  height: 1.5rem;
+  width: auto;
+  display: block;
+  margin-top: 0.9rem;
+  margin-left: 1rem;
+}
+
+.sources {
+  justify-content: center;
+  color: var(--text-white);
+  font-family: var(--text-font);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.footer-sources {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
 }
