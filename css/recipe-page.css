@@ -79,6 +79,7 @@
 #nutrition-facts-headline {
   margin-left: 0;
   margin-bottom: 0;
+  text-align: left;
 }
 
 #button-nutrition {
@@ -86,10 +87,8 @@
   border: none;
   color: var(--text-white);
   border-radius: 2.5px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 9px;
-  padding-right: 9px;
+  width: 2rem;
+  height: 2rem;
   font-family: var(--text-font);
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -103,16 +102,17 @@
 #nutrition-button {
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 3rem;
   margin-left: 0;
   margin-bottom: 0;
+  margin-right: 0;
 }
 
 #nutrition-facts {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 0rem;
-
   margin-top: 1rem;
 }
 
@@ -127,6 +127,7 @@
   grid-template-columns: 1fr 1fr;
 }
 
+/*Ingredients*/
 .ingredients-steps {
   padding: 10px;
   margin: 5px 0;
@@ -139,8 +140,9 @@
   border-radius: 2.5px;
 }
 
+/*Instructions*/
 #background_instructions {
-  background-color: var(--beige);;
+  background-color: var(--beige);
   padding: 2rem;
   border-radius: 2.5px;
 }
@@ -217,13 +219,6 @@
     margin-top: 0;
   }
 }
-
-/* @media screen and (max-width: 900px) {
-  #first-row {
-    grid-template-columns: 0.9fr 1.1fr;
-    transition: all 0.8s ease;
-  }
-} */
 
 @media screen and (max-width: 624px) {
   #first-row {
