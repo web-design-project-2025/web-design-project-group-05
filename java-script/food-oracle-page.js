@@ -111,6 +111,7 @@ function resetCategoryCard(categoryCard) {
 
 // Capitalize the first letter of a word 
 function capitalizeFirstLetter(string) {
+    // The idea to use "charAt" was taken from here: https://www.w3schools.com/jsref/jsref_charat.asp
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 

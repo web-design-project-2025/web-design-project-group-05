@@ -22,7 +22,7 @@
   font-family: var(--primary-font);
   width: 90%;
   max-width: 800px;
-  margin: 3rem auto 2rem auto;
+  margin: 4rem auto 0.5rem auto;
 }
 
 /* Recipe grid container */
