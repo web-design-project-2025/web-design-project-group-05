@@ -4,15 +4,8 @@ async function loadData() {
   const recipeResponse = await fetch("json/recipe.json");
   const recipeJSON = await recipeResponse.json();
   recipes = recipeJSON.recipe;
-
-  // The following 3 lines are from: https://chatgpt.com/share/6806528c-4c58-8010-9bf9-5cd9f6f9f436 accessed: 21.04
-  // Get recipe ID from URL
-  /* const params = new URLSearchParams(window.location.search);
-  const recipeId = parseInt(params.get("id"));
-
-  // Finding the matching recipe
-  const selectedRecipe = recipes.find((recipe) => recipe.id === recipeId);
-  */
+  
+  setupFilters(recipes);
   displayRecipes(recipes);
   setupSearch(recipes); // Set up search bar functionality
 }
