@@ -13,7 +13,7 @@ async function loadData() {
 
   displayRecipes(beveragesRecipes);
 
-    // Search functionality
+  // Search functionality
   // The way how to make working search bar was learnt and modified from this video: https://www.youtube.com/watch?v=ifi6dXOl3g4&list=LL&index=5&t=299s&ab_channel=Treehouse
   const nameSearch = document.getElementById("nameSearch");
   nameSearch.addEventListener("keyup", (e) => {

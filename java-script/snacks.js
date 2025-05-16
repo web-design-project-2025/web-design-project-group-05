@@ -91,7 +91,7 @@ function displayRecipes(recipes) {
     prepContainer.innerText = `${recipe.time.value} ${recipe.time.unit}`;
     recipeInfo.appendChild(prepContainer);
 
-   // Save icon
+    // Save icon
     const saveIcon = document.createElement("i");
     saveIcon.classList.add("fa-bookmark", "save-icon");
 
